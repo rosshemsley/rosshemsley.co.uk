@@ -1,20 +1,19 @@
 #!/bin/bash
 
-BRANCH="pages"
+set -euxo pipefail
 
 echo -e "🚢 Pushing to GitHub..."
 
-hugo -d `pwd`
+pushd rosshemsley.co.uk
+hugo -d .
 
-git fetch
 git checkout gh-pages
+# git add .
 
-git add .
+# msg="generate site `date`"
+# git commit -m "$msg"
 
-msg="generate site `date`"
-git commit -m "$msg"
 
-# Push source and build repos.
-git push origin $BRANCH
+# git push origin gh-pages
 
 popd
