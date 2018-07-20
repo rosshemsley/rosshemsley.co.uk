@@ -1,0 +1,4 @@
+baseURL = "https://rosshemsley.github.io/rosshemsley.co.uk/"
+languageCode = "en-us"
+title = "My New Hugo Site"
+theme = "ananke"
