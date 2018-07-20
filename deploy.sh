@@ -4,10 +4,10 @@ set -euxo pipefail
 
 echo -e "🚢 Pushing to GitHub..."
 
+git checkout gh-pages
 pushd rosshemsley.co.uk
 hugo -d .
 
-git checkout gh-pages
 # git add .
 
 # msg="generate site `date`"
