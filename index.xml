@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ross Hemsley</title>
-    <link>http://rosshemsley.co.uk/</link>
+    <link>https://rosshemsley.co.uk/</link>
     <description>Recent content on Ross Hemsley</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
     <lastBuildDate>Fri, 20 Jul 2018 23:32:25 +0100</lastBuildDate>
     
-	<atom:link href="http://rosshemsley.co.uk/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://rosshemsley.co.uk/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>About</title>
-      <link>http://rosshemsley.co.uk/about/</link>
+      <link>https://rosshemsley.co.uk/about/</link>
       <pubDate>Fri, 20 Jul 2018 23:32:25 +0100</pubDate>
       
-      <guid>http://rosshemsley.co.uk/about/</guid>
+      <guid>https://rosshemsley.co.uk/about/</guid>
       <description>Software Engineer with strong R&amp;amp;D background
 Fan of Go
 Sometiems writes things on the internet</description>
@@ -24,21 +24,30 @@ Sometiems writes things on the internet</description>
     
     <item>
       <title>Publications</title>
-      <link>http://rosshemsley.co.uk/pubs/</link>
+      <link>https://rosshemsley.co.uk/pubs/</link>
       <pubDate>Fri, 20 Jul 2018 23:32:25 +0100</pubDate>
       
-      <guid>http://rosshemsley.co.uk/pubs/</guid>
+      <guid>https://rosshemsley.co.uk/pubs/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Chimera</title>
-      <link>http://rosshemsley.co.uk/posts/chimera/</link>
+      <link>https://rosshemsley.co.uk/posts/chimera/</link>
       <pubDate>Tue, 01 May 2012 23:19:21 +0100</pubDate>
       
-      <guid>http://rosshemsley.co.uk/posts/chimera/</guid>
+      <guid>https://rosshemsley.co.uk/posts/chimera/</guid>
       <description>Chimera 2011 (trip report) Written as a trip report for the UBSS newsletter – Text in italics is my (attempt!) at translating Florence Ménétrier’s trip report into English. Participants: Fred, Ross, Flo for the Sophitaupes, the Faverjons (Marc, Anne et Maud) and five other Italians. This trip to Abisso Chimera (at 1006m, it is currently the 85th deepest cave in the world) was completed in October 2011.
 I found myself in the sad position of having finished my degree last year, and not feeling particularly keen on entering the world of work, I somehow managed to install myself in a Ph.</description>
+    </item>
+    
+    <item>
+      <title>Barista in the Mountains</title>
+      <link>https://rosshemsley.co.uk/posts/barista/</link>
+      <pubDate>Wed, 10 Aug 2011 00:04:14 +0100</pubDate>
+      
+      <guid>https://rosshemsley.co.uk/posts/barista/</guid>
+      <description>A few weeks ago, I posted to say that I had been sent a travel espresso machine by Handpresso and that I had the intention of taking it on expedition. Well I have now returned and despite several bouts of torrential rain, a path to base camp that was muddy enough to absorb an entire man and a herd of voracious cows that ate their way through an array of hiking clothes, I am pleased to report that the coffee available was second to none.</description>
     </item>
     
   </channel>

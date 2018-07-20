@@ -3,39 +3,44 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://rosshemsley.co.uk/about/</loc>
+    <loc>https://rosshemsley.co.uk/about/</loc>
     <lastmod>2018-07-20T23:32:25+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://rosshemsley.co.uk/pubs/</loc>
+    <loc>https://rosshemsley.co.uk/pubs/</loc>
     <lastmod>2018-07-20T23:32:25+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://rosshemsley.co.uk/posts/chimera/</loc>
+    <loc>https://rosshemsley.co.uk/posts/chimera/</loc>
     <lastmod>2012-05-01T23:19:21+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://rosshemsley.co.uk/categories/</loc>
+    <loc>https://rosshemsley.co.uk/posts/barista/</loc>
+    <lastmod>2011-08-10T00:04:14+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rosshemsley.co.uk/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://rosshemsley.co.uk/posts/</loc>
+    <loc>https://rosshemsley.co.uk/posts/</loc>
     <lastmod>2012-05-01T23:19:21+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://rosshemsley.co.uk/</loc>
+    <loc>https://rosshemsley.co.uk/</loc>
     <lastmod>2018-07-20T23:32:25+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://rosshemsley.co.uk/tags/</loc>
+    <loc>https://rosshemsley.co.uk/tags/</loc>
     <priority>0</priority>
   </url>
   
