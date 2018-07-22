@@ -1,4 +1,4 @@
-baseURL = "https://rosshemsley.github.io/rosshemsley.co.uk/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+baseURL = "https://rosshemsley.co.uk/"
+languageCode = "en-uk"
+title = "Ross Hemsley"
 theme = "ananke"
