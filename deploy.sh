@@ -16,7 +16,7 @@ mkdir public
 git worktree prune
 popd
 rm -rf .git/worktrees/public/
-git worktree add rosshemsley.co.uk/public origin/gh-pages
+git worktree add rosshemsley.co.uk/public --checkout gh-pages
 pushd rosshemsley.co.uk
 rm -rf public/*
 
