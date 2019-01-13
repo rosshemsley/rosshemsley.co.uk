@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Hello World</title>
+</head>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script src="pixi.min.js"></script>
+<script src="geom.js"></script>
+<body>
+<h1>My favourite data structure: The Delaunay Triangulation</h1>
+<h2>The Delaunay property</h2>
+<p>
+    The Delaunay triangulation follows a simple rule: given three points (without duplicates and not on a line)
+    we can construct a unique circle called the <i>circumcircle</i>. If that circle contains no other points,
+    then the triangle satisfies the <i>Delaunay property</i>
+</p>
+<p>
+    A non-trivial observation is that if you have a collection of random points, adding all of the
+    Delaunay triangles gives you a <i>unique</i> gap-free mesh called the </strong>Delaunay triangulation</strong>.
+
+    This suggests a very simple algorithm for constructing the Delaunay triangulation:
+    just keep selecting three random points and add them as a triangle to the triangulation if
+    their circumcircle is empty.
+
+<pre>
+var triangulation
+
+while triangulationNotComplete(triangulation) {
+    p1, p2, p3 := theeRandomPoints(X)
+    ps = pointsContainedInCircumCircle(X, p1, p2, p3)
+    if len(ps) == 0 {
+        triangulation.addTriangle(p1, p2, p3)
+    }
+}
+</pre>
+    Here's what running that would look like:
+</p>
+  <script type="text/javascript">
+    let type = "WebGL"
+    if(!PIXI.utils.isWebGLSupported()){
+      type = "canvas"
+    }
+
+    let drawTriangulation = function (graphics, points) {
+        for (let value of points) {
+            console.log(value)
+            graphics.drawCircle(value.x, value.y, 1);
+        }
+    }
+
+  
+    let dist = function(o1, o2) {
+        let deltaX = o1.x - o2.x;
+        let deltaY = o1.y - o2.y;
+        return Math.sqrt(deltaX*deltaX + deltaY*deltaY)
+    }
+
+    let pointsInCircle = function(circle, points) {
+        let inside = [];
+
+        for (var i = 0; i < points.length; i++) {
+            if (dist(circle, points[i]) <= circle.r) {
+                inside.push(points[i])
+            }
+        }
+
+        return inside;
+    }
+
+    let stupidTriangulate = function(app, points) {
+        triangles = []
+        var stupidTriangulator = new PIXI.Graphics();
+        app.stage.addChild(stupidTriangulator);
+        let count = 0
+
+        app.ticker.add(function() {
+            count += 1
+            if (count % 100 != 0 ){
+                return
+            }
+
+            var p1, p2, p3, circle, inCircle;
+            var r1, r2, r3;
+            var triangle;
+            while (true) {
+                r1 = randInt(points.length);
+                r2 = randInt(points.length);
+                r3 = randInt(points.length);
+                if (r1 == r2 || r2 == r3 || r1 == r3) {
+                    continue;
+                }
+
+                p1 = points[r1];
+                p2 = points[r2];
+                p3 = points[r3];
+                circle = circleThroughPoints(p1, p2, p3);
+                circle.r = circle.r - 1;
+                inCircle = pointsInCircle(circle, points);
+
+                if (inCircle.length == 0) {
+                    triangle = [r1, r2, r3].sort()
+                    for (var i = 0; i < triangles.length; i++) {
+                        t = triangles[i]
+                        if (t[0] == triangle[0] && t[1] == triangle[1] && t[2] == triangle[2]) {
+                            console.log("Ignore duplicate triangle")
+                            continue
+                        }
+                    }
+                    triangles.push(triangle)
+                }
+
+                if (inCircle.length < 3)  {
+                    break
+                }
+            }
+   
+            stupidTriangulator.clear();
+            if (inCircle.length == 0) {
+                var graphics = new PIXI.Graphics();
+                app.stage.addChild(graphics);
+                graphics.lineStyle(4, 0x333333, 0.1);
+                graphics.beginFill(0x000033, 0.2);
+                graphics.moveTo(p1.x, p1.y);
+                graphics.lineTo(p2.x, p2.y);
+                graphics.lineTo(p3.x, p3.y);
+                graphics.lineTo(p1.x, p1.y);
+                graphics.endFill();
+            } else {
+                stupidTriangulator.lineStyle(4, 0x333333, 0.1);
+                stupidTriangulator.beginFill(0x000033, 0.2);
+                stupidTriangulator.moveTo(p1.x, p1.y);
+                stupidTriangulator.lineTo(p2.x, p2.y);
+                stupidTriangulator.lineTo(p3.x, p3.y);
+                stupidTriangulator.lineTo(p1.x, p1.y);
+                stupidTriangulator.endFill();
+            }
+            stupidTriangulator.lineStyle(4, 0x333333, 0.1);
+            stupidTriangulator.drawCircle(circle.x, circle.y, circle.r);
+        });
+    }
+
+
+    let points = randomPoints(5, 5, 295, 5, 295);
+
+    //Create a Pixi Application
+    let app = new PIXI.Application({
+        width: 300,         // default: 800
+        height: 300,        // default: 600
+        antialias: true,     // default: false
+        transparent: false,  // default: false
+        resolution: 1        // default: 1
+    });
+    app.renderer.backgroundColor = "0xFFFFFF";
+
+    var graphics = new PIXI.Graphics();
+    graphics.lineStyle(10, "0x0000ff", 1);
+
+    drawTriangulation(graphics, points);
+    stupidTriangulate(app, points);
+
+    // stupidTriangulate(graphics, points)
+    app.stage.addChild(graphics);
+
+
+    //Add the canvas that Pixi automatically created for you to the HTML document
+    document.body.appendChild(app.view);
+  </script>
+  <p>
+  This is not that smart!
+
+  \[ C_n^3 \cdot \approx n^3 \cdot \operatorname{\mathbb{P}} \big (\,X=x\, \big) \]
+  </p>
+
+</body>
+</html>
