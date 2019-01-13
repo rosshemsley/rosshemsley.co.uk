@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Code Review on Ross Hemsley</title>
+    <link>https://rosshemsley.co.uk/categories/code-review/</link>
+    <description>Recent content in Code Review on Ross Hemsley</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-uk</language>
+    <lastBuildDate>Sat, 12 Jan 2019 13:07:20 +0000</lastBuildDate>
+    
+	<atom:link href="https://rosshemsley.co.uk/categories/code-review/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Thoughts on code review: File IO</title>
+      <link>https://rosshemsley.co.uk/posts/file-io/</link>
+      <pubDate>Sat, 12 Jan 2019 13:07:20 +0000</pubDate>
+      
+      <guid>https://rosshemsley.co.uk/posts/file-io/</guid>
+      <description>When it comes to reviewing code that does any kind of file IO, there are a number of patterns that I find myself discouraging quite often. Interestingly, I have found that these patterns are rarely considered in discussions around code review and clean code.
+In this post, I will explore some of these patterns in more depth, and discuss why I believe it&amp;rsquo;s worth taking the time to do things slightly differently in many cases.</description>
+    </item>
+    
+  </channel>
+</rss>
