@@ -33,7 +33,7 @@
 In this post, I will explore some of these patterns in more depth, and discuss why I believe it&rsquo;s worth taking the time to do things slightly differently in many cases." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://rosshemsley.co.uk/posts/file-io/" /><meta property="article:published_time" content="2019-01-12T13:07:20&#43;00:00"/>
-<meta property="article:modified_time" content="2019-01-13T15:29:01&#43;00:00"/>
+<meta property="article:modified_time" content="2019-01-13T18:47:09&#43;00:00"/>
 
 <meta itemprop="name" content="Thoughts on code review: File IO">
 <meta itemprop="description" content="When it comes to reviewing code that does any kind of file IO, there are a number of patterns that I find myself discouraging quite often. Interestingly, I have found that these patterns are rarely considered in discussions around code review and clean code.
@@ -41,8 +41,8 @@ In this post, I will explore some of these patterns in more depth, and discuss w
 
 
 <meta itemprop="datePublished" content="2019-01-12T13:07:20&#43;00:00" />
-<meta itemprop="dateModified" content="2019-01-13T15:29:01&#43;00:00" />
-<meta itemprop="wordCount" content="2438">
+<meta itemprop="dateModified" content="2019-01-13T18:47:09&#43;00:00" />
+<meta itemprop="wordCount" content="2435">
 
 
 
@@ -397,7 +397,7 @@ In C++, you can use <code>std::iostream</code>&hellip; yes, I know that <code>io
 
 <h4 id="future-refactors-and-chaining">Future refactors and chaining</h4>
 
-<p>Here&rsquo;s an example of a library I wrote that reads MNIST data, providing two APIs for reading data from path or from a reader, <a href="https://github.com/rosshemsley/gonn/blob/master/mnist/mnist.go#L16">MNIST reader</a> (TODO: fix leak&hellip;).</p>
+<p>Here&rsquo;s an example of a library I wrote that reads MNIST data, providing two APIs for reading data from path or from a reader, <a href="https://github.com/rosshemsley/gonn/blob/master/mnist/mnist.go#L16">MNIST reader</a>.</p>
 
 <p>The example link above illustrates another useful property of passing around file-like-objects - they can be <strong>chained</strong> with other operators, such as a decompressor. A pattern I have executed multiple times now is to move from storing raw json files on disk to storing gzipped json files. If I have factored my code to take <code>io.Reader</code> objects everywhere rather than paths, then I can easily add a shim between the file and the function to transparantely decompresses the input. Even more powerful, is that I can make my reader automatically <em>detect</em> gzipped data and add a decompressor to the reader only when required. This change doesn&rsquo;t have to touch any of the tests or business logic in the parsing code.</p>
 
