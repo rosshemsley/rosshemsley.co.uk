@@ -1,7 +1,6 @@
 ---
 title: "Thoughts on code review: File IO"
 date: 2019-01-12T13:07:20Z
-draft: true
 ---
 
 When it comes to reviewing code that does any kind of file IO, there are a number of patterns that I find myself discouraging quite often. Interestingly, I have found that these patterns are rarely considered in discussions around code review and clean code.
@@ -145,7 +144,7 @@ When I come across libraries with APIs that take paths, and provide no obvious a
 
 #### Future refactors and chaining
 
-Here's an example of a library I wrote that reads MNIST data, providing two APIs for reading data from path or from a reader, [MNIST reader](https://github.com/rosshemsley/gonn/blob/master/mnist/mnist.go#L16) (TODO: fix leak).
+Here's an example of a library I wrote that reads MNIST data, providing two APIs for reading data from path or from a reader, [MNIST reader](https://github.com/rosshemsley/gonn/blob/master/mnist/mnist.go#L16) (TODO: fix leak...).
 
 The example link above illustrates another useful property of passing around file-like-objects - they can be **chained** with other operators, such as a decompressor. A pattern I have executed multiple times now is to move from storing raw json files on disk to storing gzipped json files. If I have factored my code to take `io.Reader` objects everywhere rather than paths, then I can easily add a shim between the file and the function to transparantely decompresses the input. Even more powerful, is that I can make my reader automatically _detect_ gzipped data and add a decompressor to the reader only when required. This change doesn't have to touch any of the tests or business logic in the parsing code.
 
