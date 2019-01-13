@@ -2,11 +2,21 @@ baseURL = "https://rosshemsley.co.uk/"
 languageCode = "en-uk"
 SectionPagesMenu = "main"
 title = "Ross Hemsley"
+
 theme = "ananke"
 googleAnalytics = "UA-40455296-1"
 ignorefiles = [ "content/drafts/.*" ]
+publishDir = "../docs"
+enableGitInfo = true
+pygmentsStyle = "monokai"
+
+[taxonomies]
+   tag = "tags"
+   category = "categories"
 
 [params]
+  AuthorName = "Ross Hemsley"
+  gitHubUser = "rosshemsley"
   favicon = ""
   description = "Personal site for Ross Hemsley"
   instagram = ""

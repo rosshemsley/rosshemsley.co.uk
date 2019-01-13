@@ -1,6 +1,8 @@
 ---
 title: "Thoughts on code review: File IO"
 date: 2019-01-12T13:07:20Z
+categories: [engineering, code-review]
+tags: [go,code review, engineering]
 ---
 
 When it comes to reviewing code that does any kind of file IO, there are a number of patterns that I find myself discouraging quite often. Interestingly, I have found that these patterns are rarely considered in discussions around code review and clean code.

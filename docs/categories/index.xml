@@ -10,5 +10,23 @@
 	<atom:link href="https://rosshemsley.co.uk/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>Code Review</title>
+      <link>https://rosshemsley.co.uk/categories/code-review/</link>
+      <pubDate>Sat, 12 Jan 2019 13:07:20 +0000</pubDate>
+      
+      <guid>https://rosshemsley.co.uk/categories/code-review/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Engineering</title>
+      <link>https://rosshemsley.co.uk/categories/engineering/</link>
+      <pubDate>Sat, 12 Jan 2019 13:07:20 +0000</pubDate>
+      
+      <guid>https://rosshemsley.co.uk/categories/engineering/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

@@ -4,31 +4,32 @@
   
   <url>
     <loc>https://rosshemsley.co.uk/</loc>
-    <lastmod>2019-01-12T13:09:42+00:00</lastmod>
+    <lastmod>2019-01-13T15:18:15+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://rosshemsley.co.uk/posts/file-io/</loc>
-    <lastmod>2019-01-12T13:07:20+00:00</lastmod>
+    <lastmod>2019-01-13T15:29:01+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://rosshemsley.co.uk/about/</loc>
-    <lastmod>2018-07-20T23:32:25+01:00</lastmod>
+    <lastmod>2019-01-13T15:18:15+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://rosshemsley.co.uk/pubs/</loc>
-    <lastmod>2018-07-20T23:32:25+01:00</lastmod>
+    <lastmod>2019-01-13T15:18:15+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://rosshemsley.co.uk/posts/chimera/</loc>
-    <lastmod>2012-05-01T23:19:21+01:00</lastmod>
+    <lastmod>2019-01-13T15:18:15+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://rosshemsley.co.uk/posts/barista/</loc>
+    <lastmod>2019-01-13T15:18:15+00:00</lastmod>
   </url>
   
   <url>
@@ -37,13 +38,44 @@
   </url>
   
   <url>
+    <loc>https://rosshemsley.co.uk/categories/code-review/</loc>
+    <lastmod>2019-01-13T15:29:01+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://rosshemsley.co.uk/tags/code-review/</loc>
+    <lastmod>2019-01-13T15:29:01+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://rosshemsley.co.uk/categories/engineering/</loc>
+    <lastmod>2019-01-13T15:29:01+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://rosshemsley.co.uk/tags/engineering/</loc>
+    <lastmod>2019-01-13T15:29:01+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://rosshemsley.co.uk/tags/go/</loc>
+    <lastmod>2019-01-13T15:29:01+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://rosshemsley.co.uk/posts/</loc>
-    <lastmod>2019-01-12T13:07:20+00:00</lastmod>
+    <lastmod>2019-01-13T15:29:01+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://rosshemsley.co.uk/tags/</loc>
+    <lastmod>2019-01-13T15:29:01+00:00</lastmod>
     <priority>0</priority>
   </url>
   
