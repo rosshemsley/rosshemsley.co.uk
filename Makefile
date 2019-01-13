@@ -2,7 +2,7 @@
 .PHONY: serve
 
 build:
-	cd rosshemsley.co.uk && hugo -d ../docs
+	cd rosshemsley.co.uk && HUGO_ENV=production hugo -d ../docs
 
 serve:
 	cd rosshemsley.co.uk && hugo serve -D 

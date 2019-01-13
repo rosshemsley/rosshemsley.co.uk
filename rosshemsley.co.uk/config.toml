@@ -3,7 +3,7 @@ languageCode = "en-uk"
 SectionPagesMenu = "main"
 title = "Ross Hemsley"
 theme = "ananke"
-
+googleAnalytics = "UA-40455296-1"
 ignorefiles = [ "content/drafts/.*" ]
 
 [params]
