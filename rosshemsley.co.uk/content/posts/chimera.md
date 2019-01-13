@@ -2,6 +2,8 @@
 title: "Chimera"
 featured_image: /posts/quarry.jpg
 date: 2012-05-01T23:19:21+01:00
+categories: [caving, photography]
+tags: [caving, photography]
 ---
 
 # Abisso Chimera 2011 (trip report)
