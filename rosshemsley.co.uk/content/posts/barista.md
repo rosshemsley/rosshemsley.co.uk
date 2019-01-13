@@ -1,6 +1,6 @@
 ---
 title: "Barista in the Mountains"
-date: 201featured_image = "header.jpg"1-08-10T00:04:14+01:00
+date: 2011-08-10T00:04:14+01:00
 featured_image: /posts/camp.jpg
 categories: [caving, photography]
 tags: [caving, photography]
