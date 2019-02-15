@@ -38,20 +38,14 @@
   </url>
   
   <url>
-    <loc>https://rosshemsley.co.uk/tags/caving/</loc>
-    <lastmod>2019-01-13T19:18:17+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://rosshemsley.co.uk/categories/caving/</loc>
     <lastmod>2019-01-13T19:18:17+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://rosshemsley.co.uk/tags/code-review/</loc>
-    <lastmod>2019-01-13T18:47:09+00:00</lastmod>
+    <loc>https://rosshemsley.co.uk/tags/caving/</loc>
+    <lastmod>2019-01-13T19:18:17+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -62,7 +56,7 @@
   </url>
   
   <url>
-    <loc>https://rosshemsley.co.uk/tags/engineering/</loc>
+    <loc>https://rosshemsley.co.uk/tags/code-review/</loc>
     <lastmod>2019-01-13T18:47:09+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -74,19 +68,25 @@
   </url>
   
   <url>
+    <loc>https://rosshemsley.co.uk/tags/engineering/</loc>
+    <lastmod>2019-01-13T18:47:09+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://rosshemsley.co.uk/tags/go/</loc>
     <lastmod>2019-01-13T18:47:09+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://rosshemsley.co.uk/tags/photography/</loc>
+    <loc>https://rosshemsley.co.uk/categories/photography/</loc>
     <lastmod>2019-01-13T19:18:17+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://rosshemsley.co.uk/categories/photography/</loc>
+    <loc>https://rosshemsley.co.uk/tags/photography/</loc>
     <lastmod>2019-01-13T19:18:17+00:00</lastmod>
     <priority>0</priority>
   </url>
