@@ -6,3 +6,6 @@ build:
 
 serve:
 	cd rosshemsley.co.uk && hugo serve -D 
+
+serve-no-draft:
+	cd rosshemsley.co.uk && hugo serve
