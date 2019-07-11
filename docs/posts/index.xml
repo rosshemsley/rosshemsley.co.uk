@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Ross Hemsley</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
-    <lastBuildDate>Sat, 12 Jan 2019 13:07:20 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 10 Jul 2019 21:02:46 +0100</lastBuildDate>
     
 	<atom:link href="https://rosshemsley.co.uk/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Why I started avoiding the word &#39;own&#39;</title>
+      <link>https://rosshemsley.co.uk/posts/no-own/</link>
+      <pubDate>Wed, 10 Jul 2019 21:02:46 +0100</pubDate>
+      
+      <guid>https://rosshemsley.co.uk/posts/no-own/</guid>
+      <description>I have started trying to avoid the word &amp;ldquo;own&amp;rdquo; in the workplace. Admittedly, it&amp;rsquo;s a bit of a silly idea, but I do think it&amp;rsquo;s a worthwhile adjustment that can help improve our professional relationships.
+This little word can pop up quite a lot, &amp;ldquo;Jane owns this project&amp;rdquo;, &amp;ldquo;I own this document&amp;rdquo;, &amp;ldquo;Pete can you own this?&amp;rdquo;. It feels innocent enough, but I would argue that it can nudge our mindset in the wrong direction in the workplace.</description>
+    </item>
     
     <item>
       <title>Thoughts on code review: File IO</title>
