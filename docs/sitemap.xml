@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://rosshemsley.co.uk/posts/cmake-pain/</loc>
+    <lastmod>2019-07-30T07:04:35+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rosshemsley.co.uk/posts/linking/</loc>
+    <lastmod>2019-07-30T09:09:27+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://rosshemsley.co.uk/posts/no-own/</loc>
     <lastmod>2019-07-11T21:34:22+01:00</lastmod>
   </url>
@@ -43,20 +53,14 @@
   </url>
   
   <url>
-    <loc>https://rosshemsley.co.uk/tags/caving/</loc>
-    <lastmod>2019-01-13T19:18:17+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://rosshemsley.co.uk/categories/caving/</loc>
     <lastmod>2019-01-13T19:18:17+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://rosshemsley.co.uk/tags/code-review/</loc>
-    <lastmod>2019-01-13T18:47:09+00:00</lastmod>
+    <loc>https://rosshemsley.co.uk/tags/caving/</loc>
+    <lastmod>2019-01-13T19:18:17+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -67,7 +71,7 @@
   </url>
   
   <url>
-    <loc>https://rosshemsley.co.uk/tags/engineering/</loc>
+    <loc>https://rosshemsley.co.uk/tags/code-review/</loc>
     <lastmod>2019-01-13T18:47:09+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -79,14 +83,14 @@
   </url>
   
   <url>
-    <loc>https://rosshemsley.co.uk/tags/go/</loc>
+    <loc>https://rosshemsley.co.uk/tags/engineering/</loc>
     <lastmod>2019-01-13T18:47:09+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://rosshemsley.co.uk/tags/photography/</loc>
-    <lastmod>2019-01-13T19:18:17+00:00</lastmod>
+    <loc>https://rosshemsley.co.uk/tags/go/</loc>
+    <lastmod>2019-01-13T18:47:09+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -97,8 +101,14 @@
   </url>
   
   <url>
+    <loc>https://rosshemsley.co.uk/tags/photography/</loc>
+    <lastmod>2019-01-13T19:18:17+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://rosshemsley.co.uk/posts/</loc>
-    <lastmod>2019-07-11T21:34:22+01:00</lastmod>
+    <lastmod>2019-07-30T07:04:35+00:00</lastmod>
     <priority>0</priority>
   </url>
   
