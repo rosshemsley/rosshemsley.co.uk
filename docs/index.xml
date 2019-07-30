@@ -12,6 +12,26 @@
     
     
     <item>
+      <title>The Axioms of linking</title>
+      <link>https://rosshemsley.co.uk/posts/cmake-pain/</link>
+      <pubDate>Tue, 30 Jul 2019 07:04:35 +0000</pubDate>
+      
+      <guid>https://rosshemsley.co.uk/posts/cmake-pain/</guid>
+      <description>How did things get this bad? The Axioms of linking Every few months I end up in the a shady corner of the internet, with twenty tabs open searching for variations on &amp;lsquo;why the $%^&amp;amp;!@ does this not work&amp;rsquo;. Hours later I end up re-discovering the truth: using binary libraries in $CURRENT_YEAR still pretty much sucks.
+So let&amp;rsquo;s try and get something positive out of this, and at least write up the facts of the situation.</description>
+    </item>
+    
+    <item>
+      <title>The Axioms of linking</title>
+      <link>https://rosshemsley.co.uk/posts/linking/</link>
+      <pubDate>Tue, 30 Jul 2019 07:04:35 +0000</pubDate>
+      
+      <guid>https://rosshemsley.co.uk/posts/linking/</guid>
+      <description>How did things get this bad? The Axioms of linking Every few months I end up in the a shady corner of the internet, with twenty tabs open searching for variations on &amp;lsquo;why the $%^&amp;amp;!@ does this not work&amp;rsquo;. Hours later I end up re-discovering the truth: using binary libraries in $CURRENT_YEAR still pretty much sucks.
+So let&amp;rsquo;s try and get something positive out of this, and at least write up the facts of the situation.</description>
+    </item>
+    
+    <item>
       <title>Why I started avoiding the word &#39;own&#39;</title>
       <link>https://rosshemsley.co.uk/posts/no-own/</link>
       <pubDate>Wed, 10 Jul 2019 21:02:46 +0100</pubDate>
