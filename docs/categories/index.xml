@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Ross Hemsley</title>
@@ -6,21 +6,13 @@
     <description>Recent content in Categories on Ross Hemsley</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
+    <lastBuildDate>Sat, 12 Jan 2019 13:07:20 +0000</lastBuildDate>
     
 	<atom:link href="https://rosshemsley.co.uk/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Caving</title>
-      <link>https://rosshemsley.co.uk/categories/caving/</link>
-      <pubDate>Tue, 01 May 2012 23:19:21 +0100</pubDate>
-      
-      <guid>https://rosshemsley.co.uk/categories/caving/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Code Review</title>
+      <title>code-review</title>
       <link>https://rosshemsley.co.uk/categories/code-review/</link>
       <pubDate>Sat, 12 Jan 2019 13:07:20 +0000</pubDate>
       
@@ -29,7 +21,7 @@
     </item>
     
     <item>
-      <title>Engineering</title>
+      <title>engineering</title>
       <link>https://rosshemsley.co.uk/categories/engineering/</link>
       <pubDate>Sat, 12 Jan 2019 13:07:20 +0000</pubDate>
       
@@ -38,7 +30,16 @@
     </item>
     
     <item>
-      <title>Photography</title>
+      <title>caving</title>
+      <link>https://rosshemsley.co.uk/categories/caving/</link>
+      <pubDate>Tue, 01 May 2012 23:19:21 +0100</pubDate>
+      
+      <guid>https://rosshemsley.co.uk/categories/caving/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>photography</title>
       <link>https://rosshemsley.co.uk/categories/photography/</link>
       <pubDate>Tue, 01 May 2012 23:19:21 +0100</pubDate>
       

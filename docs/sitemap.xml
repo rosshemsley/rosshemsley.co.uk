@@ -1,10 +1,20 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://rosshemsley.co.uk/posts/</loc>
+    <lastmod>2020-03-05T18:00:53+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://rosshemsley.co.uk/posts/linking/</loc>
     <lastmod>2019-07-30T09:11:29+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rosshemsley.co.uk/posts/original1.linking/</loc>
+    <lastmod>2019-07-30T07:04:35+00:00</lastmod>
   </url>
   
   <url>
@@ -13,13 +23,63 @@
   </url>
   
   <url>
+    <loc>https://rosshemsley.co.uk/posts/original1.no-own/</loc>
+    <lastmod>2019-07-10T21:02:46+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://rosshemsley.co.uk/</loc>
     <lastmod>2019-01-13T19:15:35+00:00</lastmod>
   </url>
   
   <url>
+    <loc>https://rosshemsley.co.uk/original1._index/</loc>
+    <lastmod>2019-01-12T13:09:42+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rosshemsley.co.uk/categories/</loc>
+    <lastmod>2020-03-05T18:00:53+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rosshemsley.co.uk/tags/code-review/</loc>
+    <lastmod>2020-03-05T18:00:53+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rosshemsley.co.uk/categories/code-review/</loc>
+    <lastmod>2020-03-05T18:00:53+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rosshemsley.co.uk/tags/engineering/</loc>
+    <lastmod>2020-03-05T18:00:53+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rosshemsley.co.uk/categories/engineering/</loc>
+    <lastmod>2020-03-05T18:00:53+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rosshemsley.co.uk/tags/go/</loc>
+    <lastmod>2020-03-05T18:00:53+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rosshemsley.co.uk/tags/</loc>
+    <lastmod>2020-03-05T18:00:53+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://rosshemsley.co.uk/posts/file-io/</loc>
-    <lastmod>2019-01-13T18:47:09+00:00</lastmod>
+    <lastmod>2020-03-05T18:00:53+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rosshemsley.co.uk/posts/original1.file-io/</loc>
+    <lastmod>2019-01-12T13:07:20+00:00</lastmod>
   </url>
   
   <url>
@@ -28,8 +88,28 @@
   </url>
   
   <url>
+    <loc>https://rosshemsley.co.uk/original1.about/</loc>
+    <lastmod>2018-07-20T23:32:25+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rosshemsley.co.uk/original1.pubs/</loc>
+    <lastmod>2018-07-20T23:32:25+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://rosshemsley.co.uk/pubs/</loc>
     <lastmod>2019-01-13T15:18:15+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rosshemsley.co.uk/tags/caving/</loc>
+    <lastmod>2019-01-13T23:26:52+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rosshemsley.co.uk/categories/caving/</loc>
+    <lastmod>2019-01-13T23:26:52+00:00</lastmod>
   </url>
   
   <url>
@@ -38,79 +118,28 @@
   </url>
   
   <url>
+    <loc>https://rosshemsley.co.uk/posts/original1.chimera/</loc>
+    <lastmod>2012-05-01T23:19:21+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rosshemsley.co.uk/tags/photography/</loc>
+    <lastmod>2019-01-13T23:26:52+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rosshemsley.co.uk/categories/photography/</loc>
+    <lastmod>2019-01-13T23:26:52+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://rosshemsley.co.uk/posts/barista/</loc>
     <lastmod>2019-01-13T23:26:52+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://rosshemsley.co.uk/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://rosshemsley.co.uk/tags/caving/</loc>
-    <lastmod>2019-01-13T19:18:17+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://rosshemsley.co.uk/categories/caving/</loc>
-    <lastmod>2019-01-13T19:18:17+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://rosshemsley.co.uk/tags/code-review/</loc>
-    <lastmod>2019-01-13T18:47:09+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://rosshemsley.co.uk/categories/code-review/</loc>
-    <lastmod>2019-01-13T18:47:09+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://rosshemsley.co.uk/tags/engineering/</loc>
-    <lastmod>2019-01-13T18:47:09+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://rosshemsley.co.uk/categories/engineering/</loc>
-    <lastmod>2019-01-13T18:47:09+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://rosshemsley.co.uk/tags/go/</loc>
-    <lastmod>2019-01-13T18:47:09+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://rosshemsley.co.uk/tags/photography/</loc>
-    <lastmod>2019-01-13T19:18:17+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://rosshemsley.co.uk/categories/photography/</loc>
-    <lastmod>2019-01-13T19:18:17+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://rosshemsley.co.uk/posts/</loc>
-    <lastmod>2019-07-30T09:11:29+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://rosshemsley.co.uk/tags/</loc>
-    <lastmod>2019-01-13T19:18:17+00:00</lastmod>
-    <priority>0</priority>
+    <loc>https://rosshemsley.co.uk/posts/original1.barista/</loc>
+    <lastmod>2011-08-10T00:04:14+01:00</lastmod>
   </url>
   
 </urlset>
