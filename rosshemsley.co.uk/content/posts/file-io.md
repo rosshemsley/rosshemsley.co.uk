@@ -175,9 +175,8 @@ One way to deal with reading files is to read the whole thing into memory and th
 ## When should I ignore this advice?
 
 As with every rule, there are exceptions. In particular, we cannot ignore the fact that file descriptors are system resources, and so any program that has to handle thousands of files may cause the OS to run out of file descriptors if all of them are held open at all times. In those cases, we sometimes have to break the rules. My argument in this post is that the most common workload is reading files containing data or config, and that usually we should switch out raw paths for file-like objects as early as possible.
-As with every rule, there are exceptions. In this case, we cannot ignore the fact that file descriptors are system resources, and so any program that has to handle thousands of files may experience other issues if all of them are held open at all times. In those cases, we sometimes have to break the rules. My argument in this post is that the most common workload is reading files containing data or config, and that usually we should switch out raw paths for file-like objects as early as possible.
 
-Another exampe where writing APIs that take paths may necessary is when using memory-mapping. In this case, you can consider offering alternative APIs that take raw buffers of bytes for users that do not wish to spill to disk.
+Another example where writing APIs that take paths may necessary is when using memory-mapping. In this case, you can consider offering alternative APIs that take raw buffers of bytes for users that do not wish to spill to disk.
 
 ## Corrected example
 
