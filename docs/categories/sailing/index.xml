@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sailing on Ross Hemsley</title>
+    <link>https://rosshemsley.co.uk/categories/sailing/</link>
+    <description>Recent content in Sailing on Ross Hemsley</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-uk</language>
+    <lastBuildDate>Fri, 29 May 2020 20:49:14 +0100</lastBuildDate>
+    
+	<atom:link href="https://rosshemsley.co.uk/categories/sailing/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Restoring a Hanseatic 19.2</title>
+      <link>https://rosshemsley.co.uk/posts/hanseatic_post_1/</link>
+      <pubDate>Fri, 29 May 2020 20:49:14 +0100</pubDate>
+      
+      <guid>https://rosshemsley.co.uk/posts/hanseatic_post_1/</guid>
+      <description>Post 1 - First Steps. In order to keep myself busy whilst locked down, I took on a project of restoring a rather dilapidated, though (in my opinion) charming, and pleasingly-proportioned keelboat. The boat was complete with both a mainsail and a jib and, despite being quite scruffy, actually was sailable. Despite this, the general condition of the boat was quite bad, and it was unlikely to deal well with strong gusts&amp;hellip;</description>
+    </item>
+    
+  </channel>
+</rss>
