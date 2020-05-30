@@ -1,15 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Sailing on Ross Hemsley</title>
+    <title>sailing on Ross Hemsley</title>
     <link>https://rosshemsley.co.uk/tags/sailing/</link>
-    <description>Recent content in Sailing on Ross Hemsley</description>
+    <description>Recent content in sailing on Ross Hemsley</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
-    <lastBuildDate>Fri, 29 May 2020 20:49:14 +0100</lastBuildDate>
+    <lastBuildDate>Sat, 30 May 2020 22:54:14 +0100</lastBuildDate>
     
 	<atom:link href="https://rosshemsley.co.uk/tags/sailing/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Restoring a Hanseatic 19.2</title>
+      <link>https://rosshemsley.co.uk/posts/hanseatic_post_2/</link>
+      <pubDate>Sat, 30 May 2020 22:54:14 +0100</pubDate>
+      
+      <guid>https://rosshemsley.co.uk/posts/hanseatic_post_2/</guid>
+      <description>Back to post 1
+The first post in this series was rather destructive. The floor was torn out, and the deck trim was prised off. This post is more constructive, and covers the first few steps of building a new floor.
+Fortunately, it was possible to save enough of the original floor to use as a template. Working in this way was much simpler than trying to measure out the awkwardly curved inner profile of the hull!</description>
+    </item>
     
     <item>
       <title>Restoring a Hanseatic 19.2</title>
@@ -17,7 +28,7 @@
       <pubDate>Fri, 29 May 2020 20:49:14 +0100</pubDate>
       
       <guid>https://rosshemsley.co.uk/posts/hanseatic_post_1/</guid>
-      <description>Post 1 - First Steps. In order to keep myself busy whilst locked down, I took on a project of restoring a rather dilapidated, though (in my opinion) charming, and pleasingly-proportioned keelboat. The boat was complete with both a mainsail and a jib and, despite being quite scruffy, actually was sailable. Despite this, the general condition of the boat was quite bad, and it was unlikely to deal well with strong gusts&amp;hellip;</description>
+      <description>The boat is a Hanseatic 19.2, which appears to have been built in 1978. The cockpit had clearly been re-fitted at some time during this period; with a thick, planked deck, a center mainsheet (awkwardly) attached to the floor on a short wire cable, and a bilge pump handle located directly in the middle of the floor. From the looks of the boat, and some judicious Googling, it appears that the mainsheet may have originally been attached at the transom, though this practice appears to have fallen out of fashion on more modern boats.</description>
     </item>
     
   </channel>

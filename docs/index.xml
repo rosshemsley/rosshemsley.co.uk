@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ross Hemsley</title>
@@ -13,11 +13,22 @@
     
     <item>
       <title>Restoring a Hanseatic 19.2</title>
+      <link>https://rosshemsley.co.uk/posts/hanseatic_post_2/</link>
+      <pubDate>Sat, 30 May 2020 22:54:14 +0100</pubDate>
+      
+      <guid>https://rosshemsley.co.uk/posts/hanseatic_post_2/</guid>
+      <description>Back to post 1
+The first post in this series was rather destructive. The floor was torn out, and the deck trim was prised off. This post is more constructive, and covers the first few steps of building a new floor.
+Fortunately, it was possible to save enough of the original floor to use as a template. Working in this way was much simpler than trying to measure out the awkwardly curved inner profile of the hull!</description>
+    </item>
+    
+    <item>
+      <title>Restoring a Hanseatic 19.2</title>
       <link>https://rosshemsley.co.uk/posts/hanseatic_post_1/</link>
       <pubDate>Fri, 29 May 2020 20:49:14 +0100</pubDate>
       
       <guid>https://rosshemsley.co.uk/posts/hanseatic_post_1/</guid>
-      <description>Post 1 - First Steps. In order to keep myself busy whilst locked down, I took on a project of restoring a rather dilapidated, though (in my opinion) charming, and pleasingly-proportioned keelboat. The boat was complete with both a mainsail and a jib and, despite being quite scruffy, actually was sailable. Despite this, the general condition of the boat was quite bad, and it was unlikely to deal well with strong gusts&amp;hellip;</description>
+      <description>The boat is a Hanseatic 19.2, which appears to have been built in 1978. The cockpit had clearly been re-fitted at some time during this period; with a thick, planked deck, a center mainsheet (awkwardly) attached to the floor on a short wire cable, and a bilge pump handle located directly in the middle of the floor. From the looks of the boat, and some judicious Googling, it appears that the mainsheet may have originally been attached at the transom, though this practice appears to have fallen out of fashion on more modern boats.</description>
     </item>
     
     <item>
@@ -26,7 +37,17 @@
       <pubDate>Tue, 30 Jul 2019 07:04:35 +0000</pubDate>
       
       <guid>https://rosshemsley.co.uk/posts/linking/</guid>
-      <description>How did things get this bad? The Axioms of linking Every few months I end up in the a shady corner of the internet, with twenty tabs open searching for variations on &amp;lsquo;why the $%^&amp;amp;!@ does this not work&amp;rsquo;. Hours later I end up re-discovering the truth: using binary libraries in $CURRENT_YEAR still pretty much sucks.
+      <description>How did things get this bad?The Axioms of linking Every few months I end up in the a shady corner of the internet, with twenty tabs open searching for variations on &amp;lsquo;why the $%^&amp;amp;!@ does this not work&amp;rsquo;. Hours later I end up re-discovering the truth: using binary libraries in $CURRENT_YEAR still pretty much sucks.
+So let&amp;rsquo;s try and get something positive out of this, and at least write up the facts of the situation.</description>
+    </item>
+    
+    <item>
+      <title>The Axioms of linking</title>
+      <link>https://rosshemsley.co.uk/posts/original1.linking/</link>
+      <pubDate>Tue, 30 Jul 2019 07:04:35 +0000</pubDate>
+      
+      <guid>https://rosshemsley.co.uk/posts/original1.linking/</guid>
+      <description>How did things get this bad?The Axioms of linking Every few months I end up in the a shady corner of the internet, with twenty tabs open searching for variations on &amp;lsquo;why the $%^&amp;amp;!@ does this not work&amp;rsquo;. Hours later I end up re-discovering the truth: using binary libraries in $CURRENT_YEAR still pretty much sucks.
 So let&amp;rsquo;s try and get something positive out of this, and at least write up the facts of the situation.</description>
     </item>
     
@@ -37,7 +58,26 @@ So let&amp;rsquo;s try and get something positive out of this, and at least writ
       
       <guid>https://rosshemsley.co.uk/posts/no-own/</guid>
       <description>I have started trying to avoid the word &amp;ldquo;own&amp;rdquo; in the workplace. Admittedly, it&amp;rsquo;s a bit of a silly idea, but I do think it&amp;rsquo;s a worthwhile adjustment that can help improve our professional relationships.
-This little word can pop up quite a lot, &amp;ldquo;Jane owns this project&amp;rdquo;, &amp;ldquo;I own this document&amp;rdquo;, &amp;ldquo;Pete can you own this?&amp;rdquo;. It feels innocent enough, but I would argue that it can nudge our mindset in the wrong direction in the workplace.</description>
+This little word can pop up quite a lot, &amp;ldquo;Jane owns this project&amp;rdquo;, &amp;ldquo;I own this document&amp;rdquo;, &amp;ldquo;Pete can you own this?&amp;quot;. It feels innocent enough, but I would argue that it can nudge our mindset in the wrong direction in the workplace.</description>
+    </item>
+    
+    <item>
+      <title>Why I started avoiding the word &#39;own&#39;</title>
+      <link>https://rosshemsley.co.uk/posts/original1.no-own/</link>
+      <pubDate>Wed, 10 Jul 2019 21:02:46 +0100</pubDate>
+      
+      <guid>https://rosshemsley.co.uk/posts/original1.no-own/</guid>
+      <description>I have started trying to avoid the word &amp;ldquo;own&amp;rdquo; in the workplace. Admittedly, it&amp;rsquo;s a bit of a silly idea, but I do think it&amp;rsquo;s a worthwhile adjustment that can help improve our professional relationships.
+This little word can pop up quite a lot, &amp;ldquo;Jane owns this project&amp;rdquo;, &amp;ldquo;I own this document&amp;rdquo;, &amp;ldquo;Pete can you own this?&amp;quot;. It feels innocent enough, but I would argue that it can nudge our mindset in the wrong direction in the workplace.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://rosshemsley.co.uk/original1._index/</link>
+      <pubDate>Sat, 12 Jan 2019 13:09:42 +0000</pubDate>
+      
+      <guid>https://rosshemsley.co.uk/original1._index/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -46,6 +86,16 @@ This little word can pop up quite a lot, &amp;ldquo;Jane owns this project&amp;r
       <pubDate>Sat, 12 Jan 2019 13:07:20 +0000</pubDate>
       
       <guid>https://rosshemsley.co.uk/posts/file-io/</guid>
+      <description>When it comes to reviewing code that does any kind of file IO, there are a number of patterns that I find myself discouraging quite often. Interestingly, I have found that these patterns are rarely considered in discussions around code review and clean code.
+In this post, I will explore some of these patterns in more depth, and discuss why I believe it&amp;rsquo;s worth taking the time to do things slightly differently in many cases.</description>
+    </item>
+    
+    <item>
+      <title>Thoughts on code review: File IO</title>
+      <link>https://rosshemsley.co.uk/posts/original1.file-io/</link>
+      <pubDate>Sat, 12 Jan 2019 13:07:20 +0000</pubDate>
+      
+      <guid>https://rosshemsley.co.uk/posts/original1.file-io/</guid>
       <description>When it comes to reviewing code that does any kind of file IO, there are a number of patterns that I find myself discouraging quite often. Interestingly, I have found that these patterns are rarely considered in discussions around code review and clean code.
 In this post, I will explore some of these patterns in more depth, and discuss why I believe it&amp;rsquo;s worth taking the time to do things slightly differently in many cases.</description>
     </item>
@@ -60,6 +110,30 @@ In this post, I will explore some of these patterns in more depth, and discuss w
 Fan of Go
 Sometimes writes things on the internet
 Works at Lyft Level 5</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://rosshemsley.co.uk/original1.about/</link>
+      <pubDate>Fri, 20 Jul 2018 23:32:25 +0100</pubDate>
+      
+      <guid>https://rosshemsley.co.uk/original1.about/</guid>
+      <description>Software Engineer with an academic R&amp;amp;D background
+Fan of Go
+Sometimes writes things on the internet
+Works at Lyft Level 5</description>
+    </item>
+    
+    <item>
+      <title>Publications</title>
+      <link>https://rosshemsley.co.uk/original1.pubs/</link>
+      <pubDate>Fri, 20 Jul 2018 23:32:25 +0100</pubDate>
+      
+      <guid>https://rosshemsley.co.uk/original1.pubs/</guid>
+      <description>Probabilistic methods for the analysis of algorithms on random tessellations (PhD Thesis) Ross Hemsley
+ Inria  The worst visibility walk in a random Delaunay triangulation is O(√n) Ross Hemsley, Olivier Devillers
+ Journal of Computational Geometry  Extremes for the inradius in the Poisson line tessellation Nicolas Chenavier, Ross Hemsley
+ Advances in Applied Probability Arxiv Preprint  Efficiently navigating a random Delaunay triangulation Ross Hemsley, Nicolas Broutin, Olivier Devillers,</description>
     </item>
     
     <item>
@@ -85,11 +159,30 @@ I found myself in the sad position of having finished my degree last year, and n
     </item>
     
     <item>
+      <title>Chimera</title>
+      <link>https://rosshemsley.co.uk/posts/original1.chimera/</link>
+      <pubDate>Tue, 01 May 2012 23:19:21 +0100</pubDate>
+      
+      <guid>https://rosshemsley.co.uk/posts/original1.chimera/</guid>
+      <description>Abisso Chimera 2011 (trip report) Written as a trip report for the UBSS newsletter – Text in italics is my (attempt!) at translating Florence Ménétrier’s trip report into English. Participants: Fred, Ross, Flo for the Sophitaupes, the Faverjons (Marc, Anne et Maud) and five other Italians. This trip to Abisso Chimera (at 1006m, it is currently the 85th deepest cave in the world) was completed in October 2011.
+I found myself in the sad position of having finished my degree last year, and not feeling particularly keen on entering the world of work, I somehow managed to install myself in a Ph.</description>
+    </item>
+    
+    <item>
       <title>Barista in the Mountains</title>
       <link>https://rosshemsley.co.uk/posts/barista/</link>
       <pubDate>Wed, 10 Aug 2011 00:04:14 +0100</pubDate>
       
       <guid>https://rosshemsley.co.uk/posts/barista/</guid>
+      <description>A few weeks ago, I posted to say that I had been sent a travel espresso machine by Handpresso and that I had the intention of taking it on expedition. Well I have now returned and despite several bouts of torrential rain, a path to base camp that was muddy enough to absorb an entire man and a herd of voracious cows that ate their way through an array of hiking clothes, I am pleased to report that the coffee available was second to none.</description>
+    </item>
+    
+    <item>
+      <title>Barista in the Mountains</title>
+      <link>https://rosshemsley.co.uk/posts/original1.barista/</link>
+      <pubDate>Wed, 10 Aug 2011 00:04:14 +0100</pubDate>
+      
+      <guid>https://rosshemsley.co.uk/posts/original1.barista/</guid>
       <description>A few weeks ago, I posted to say that I had been sent a travel espresso machine by Handpresso and that I had the intention of taking it on expedition. Well I have now returned and despite several bouts of torrential rain, a path to base camp that was muddy enough to absorb an entire man and a herd of voracious cows that ate their way through an array of hiking clothes, I am pleased to report that the coffee available was second to none.</description>
     </item>
     

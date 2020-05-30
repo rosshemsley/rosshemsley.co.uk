@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ross Hemsley</title>
+    <link>https://rosshemsley.co.uk/</link>
+    <description>Recent content on Ross Hemsley</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-uk</language>
+    <lastBuildDate>Sat, 12 Jan 2019 13:09:42 +0000</lastBuildDate>
+    
+	<atom:link href="https://rosshemsley.co.uk/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The Axioms of linking</title>
+      <link>https://rosshemsley.co.uk/posts/linking/</link>
+      <pubDate>Tue, 30 Jul 2019 07:04:35 +0000</pubDate>
+      
+      <guid>https://rosshemsley.co.uk/posts/linking/</guid>
+      <description>How did things get this bad? The Axioms of linking Every few months I end up in the a shady corner of the internet, with twenty tabs open searching for variations on &amp;lsquo;why the $%^&amp;amp;!@ does this not work&amp;rsquo;. Hours later I end up re-discovering the truth: using binary libraries in $CURRENT_YEAR still pretty much sucks.
+So let&amp;rsquo;s try and get something positive out of this, and at least write up the facts of the situation.</description>
+    </item>
+    
+    <item>
+      <title>Why I started avoiding the word &#39;own&#39;</title>
+      <link>https://rosshemsley.co.uk/posts/no-own/</link>
+      <pubDate>Wed, 10 Jul 2019 21:02:46 +0100</pubDate>
+      
+      <guid>https://rosshemsley.co.uk/posts/no-own/</guid>
+      <description>I have started trying to avoid the word &amp;ldquo;own&amp;rdquo; in the workplace. Admittedly, it&amp;rsquo;s a bit of a silly idea, but I do think it&amp;rsquo;s a worthwhile adjustment that can help improve our professional relationships.
+This little word can pop up quite a lot, &amp;ldquo;Jane owns this project&amp;rdquo;, &amp;ldquo;I own this document&amp;rdquo;, &amp;ldquo;Pete can you own this?&amp;rdquo;. It feels innocent enough, but I would argue that it can nudge our mindset in the wrong direction in the workplace.</description>
+    </item>
+    
+    <item>
+      <title>Thoughts on code review: File IO</title>
+      <link>https://rosshemsley.co.uk/posts/file-io/</link>
+      <pubDate>Sat, 12 Jan 2019 13:07:20 +0000</pubDate>
+      
+      <guid>https://rosshemsley.co.uk/posts/file-io/</guid>
+      <description>When it comes to reviewing code that does any kind of file IO, there are a number of patterns that I find myself discouraging quite often. Interestingly, I have found that these patterns are rarely considered in discussions around code review and clean code.
+In this post, I will explore some of these patterns in more depth, and discuss why I believe it&amp;rsquo;s worth taking the time to do things slightly differently in many cases.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://rosshemsley.co.uk/about/</link>
+      <pubDate>Fri, 20 Jul 2018 23:32:25 +0100</pubDate>
+      
+      <guid>https://rosshemsley.co.uk/about/</guid>
+      <description>Software Engineer with an academic R&amp;amp;D background
+Fan of Go
+Sometimes writes things on the internet
+Works at Lyft Level 5</description>
+    </item>
+    
+    <item>
+      <title>Publications</title>
+      <link>https://rosshemsley.co.uk/pubs/</link>
+      <pubDate>Fri, 20 Jul 2018 23:32:25 +0100</pubDate>
+      
+      <guid>https://rosshemsley.co.uk/pubs/</guid>
+      <description>Probabilistic methods for the analysis of algorithms on random tessellations (PhD Thesis) Ross Hemsley
+ Inria  The worst visibility walk in a random Delaunay triangulation is O(√n) Ross Hemsley, Olivier Devillers
+ Journal of Computational Geometry  Extremes for the inradius in the Poisson line tessellation Nicolas Chenavier, Ross Hemsley
+ Advances in Applied Probability Arxiv Preprint  Efficiently navigating a random Delaunay triangulation Ross Hemsley, Nicolas Broutin, Olivier Devillers,</description>
+    </item>
+    
+    <item>
+      <title>Chimera</title>
+      <link>https://rosshemsley.co.uk/posts/chimera/</link>
+      <pubDate>Tue, 01 May 2012 23:19:21 +0100</pubDate>
+      
+      <guid>https://rosshemsley.co.uk/posts/chimera/</guid>
+      <description>Abisso Chimera 2011 (trip report) Written as a trip report for the UBSS newsletter – Text in italics is my (attempt!) at translating Florence Ménétrier’s trip report into English. Participants: Fred, Ross, Flo for the Sophitaupes, the Faverjons (Marc, Anne et Maud) and five other Italians. This trip to Abisso Chimera (at 1006m, it is currently the 85th deepest cave in the world) was completed in October 2011.
+I found myself in the sad position of having finished my degree last year, and not feeling particularly keen on entering the world of work, I somehow managed to install myself in a Ph.</description>
+    </item>
+    
+    <item>
+      <title>Barista in the Mountains</title>
+      <link>https://rosshemsley.co.uk/posts/barista/</link>
+      <pubDate>Wed, 10 Aug 2011 00:04:14 +0100</pubDate>
+      
+      <guid>https://rosshemsley.co.uk/posts/barista/</guid>
+      <description>A few weeks ago, I posted to say that I had been sent a travel espresso machine by Handpresso and that I had the intention of taking it on expedition. Well I have now returned and despite several bouts of torrential rain, a path to base camp that was muddy enough to absorb an entire man and a herd of voracious cows that ate their way through an array of hiking clothes, I am pleased to report that the coffee available was second to none.</description>
+    </item>
+    
+  </channel>
+</rss>

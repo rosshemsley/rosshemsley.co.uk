@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Ross Hemsley</title>
+    <link>https://rosshemsley.co.uk/categories/</link>
+    <description>Recent content in Categories on Ross Hemsley</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-uk</language>
+    
+	<atom:link href="https://rosshemsley.co.uk/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Caving</title>
+      <link>https://rosshemsley.co.uk/categories/caving/</link>
+      <pubDate>Tue, 01 May 2012 23:19:21 +0100</pubDate>
+      
+      <guid>https://rosshemsley.co.uk/categories/caving/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Code Review</title>
+      <link>https://rosshemsley.co.uk/categories/code-review/</link>
+      <pubDate>Sat, 12 Jan 2019 13:07:20 +0000</pubDate>
+      
+      <guid>https://rosshemsley.co.uk/categories/code-review/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Engineering</title>
+      <link>https://rosshemsley.co.uk/categories/engineering/</link>
+      <pubDate>Sat, 12 Jan 2019 13:07:20 +0000</pubDate>
+      
+      <guid>https://rosshemsley.co.uk/categories/engineering/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Photography</title>
+      <link>https://rosshemsley.co.uk/categories/photography/</link>
+      <pubDate>Tue, 01 May 2012 23:19:21 +0100</pubDate>
+      
+      <guid>https://rosshemsley.co.uk/categories/photography/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

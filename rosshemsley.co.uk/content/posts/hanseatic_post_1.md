@@ -43,4 +43,4 @@ Since it had been attached with hundreds of long, tightly inset stainless steel 
 ![](/posts/hanseatic_post_1_images/20200510_131442.jpg)
 This image also clearly shows the change in the waterline, and the cleaned up deck! Already the boat looks to be in much better shape!
 
-_To be continued..._
+_[Go to post 2](/posts/hanseatic_post_2)_
