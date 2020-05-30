@@ -1,15 +1,14 @@
 ---
-title: "Restoring a Hanseatic 19.2"
+title: "Post 2: Restoring a Hanseatic 19.2"
 date: 2020-05-30T22:54:14+01:00
 featured_image: /posts/hanseatic_post_2_images/20200512_101154.jpg
 categories: [sailing, photography]
 tags: [sailing, photography]
 ---
 
-
 _[Back to post 1](/posts/hanseatic_post_1)_
 
-<h2>Post 2 - Fist steps on the floor</h2>
+## Starting the the floor
 
 The first post in this series was rather destructive. The floor was torn out, and the
 deck trim was prised off. This post is more constructive, and covers the first few

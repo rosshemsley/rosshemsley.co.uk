@@ -1,12 +1,13 @@
 ---
-title: "Restoring a Hanseatic 19.2"
+title: "Post 1: Restoring a Hanseatic 19.2"
 date: 2020-05-29T20:49:14+01:00
 featured_image: /posts/hanseatic_post_1_images/20200509_171404.jpg
 categories: [sailing, photography]
 tags: [sailing, photography]
 ---
 
-<h2>Post 1 - First Steps.</h2>
+## First Steps
+
 In order to keep myself busy whilst locked down, I took on a project of restoring a rather dilapidated, though (in my opinion) charming, and pleasingly-proportioned keelboat. The boat was complete with both a mainsail and a jib and, despite being quite scruffy, actually was sailable.
 Despite this, the general condition of the boat was quite bad, and it was unlikely to deal well
 with strong gusts...
