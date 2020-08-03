@@ -1,6 +1,7 @@
 ---
 title: "KISS: Backbones in Pytorch"
 date: 2020-08-03T13:19:31+01:00
+categories: [deep learning, pytorch, CNNs, backbone]
 ---
 
 ## Keep It Simple Stupid: CNN Backbones

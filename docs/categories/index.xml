@@ -6,9 +6,19 @@
     <description>Recent content in Categories on Ross Hemsley</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
+    <lastBuildDate>Mon, 03 Aug 2020 13:19:31 +0100</lastBuildDate>
     
 	<atom:link href="https://rosshemsley.co.uk/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Backbone</title>
+      <link>https://rosshemsley.co.uk/categories/backbone/</link>
+      <pubDate>Mon, 03 Aug 2020 13:19:31 +0100</pubDate>
+      
+      <guid>https://rosshemsley.co.uk/categories/backbone/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Caving</title>
@@ -20,11 +30,29 @@
     </item>
     
     <item>
+      <title>Cnns</title>
+      <link>https://rosshemsley.co.uk/categories/cnns/</link>
+      <pubDate>Mon, 03 Aug 2020 13:19:31 +0100</pubDate>
+      
+      <guid>https://rosshemsley.co.uk/categories/cnns/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Code Review</title>
       <link>https://rosshemsley.co.uk/categories/code-review/</link>
       <pubDate>Sat, 12 Jan 2019 13:07:20 +0000</pubDate>
       
       <guid>https://rosshemsley.co.uk/categories/code-review/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Deep Learning</title>
+      <link>https://rosshemsley.co.uk/categories/deep-learning/</link>
+      <pubDate>Mon, 03 Aug 2020 13:19:31 +0100</pubDate>
+      
+      <guid>https://rosshemsley.co.uk/categories/deep-learning/</guid>
       <description></description>
     </item>
     
@@ -43,6 +71,15 @@
       <pubDate>Sat, 30 May 2020 22:54:14 +0100</pubDate>
       
       <guid>https://rosshemsley.co.uk/categories/photography/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pytorch</title>
+      <link>https://rosshemsley.co.uk/categories/pytorch/</link>
+      <pubDate>Mon, 03 Aug 2020 13:19:31 +0100</pubDate>
+      
+      <guid>https://rosshemsley.co.uk/categories/pytorch/</guid>
       <description></description>
     </item>
     
