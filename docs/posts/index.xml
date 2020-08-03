@@ -6,10 +6,22 @@
     <description>Recent content in Posts on Ross Hemsley</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
-    <lastBuildDate>Sat, 30 May 2020 22:54:14 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 03 Aug 2020 13:19:31 +0100</lastBuildDate>
     
 	<atom:link href="https://rosshemsley.co.uk/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>KISS: Backbones in Pytorch</title>
+      <link>https://rosshemsley.co.uk/posts/kiss-backbone-pytorch/</link>
+      <pubDate>Mon, 03 Aug 2020 13:19:31 +0100</pubDate>
+      
+      <guid>https://rosshemsley.co.uk/posts/kiss-backbone-pytorch/</guid>
+      <description>Keep It Simple Stupid: CNN Backbones Many modern CNNs (convolutional neural networks) use a backbone to extract feature maps as the first step in their architecture: for example, some flavour of Resnet50.
+
+Helpfully, many of these backbones are implemented for us in torchvision, even with pre-trained models made available. This means we can often write simple code that looks like the following:
+1 2 3 4 5 6 7 8 9 10 11 12  from torchvision.</description>
+    </item>
     
     <item>
       <title>Post 2: Restoring a Hanseatic 19.2</title>

@@ -1,7 +1,6 @@
 ---
 title: "KISS: Backbones in Pytorch"
 date: 2020-08-03T13:19:31+01:00
-draft: true
 ---
 
 ## Keep It Simple Stupid: CNN Backbones

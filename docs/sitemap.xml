@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://rosshemsley.co.uk/posts/kiss-backbone-pytorch/</loc>
+    <lastmod>2020-08-03T13:43:50+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://rosshemsley.co.uk/posts/hanseatic_post_2/</loc>
     <lastmod>2020-05-30T23:51:09+01:00</lastmod>
   </url>
@@ -34,7 +39,7 @@
   
   <url>
     <loc>https://rosshemsley.co.uk/about/</loc>
-    <lastmod>2020-08-03T13:18:04+01:00</lastmod>
+    <lastmod>2020-08-03T13:43:50+01:00</lastmod>
   </url>
   
   <url>
@@ -113,7 +118,7 @@
   
   <url>
     <loc>https://rosshemsley.co.uk/posts/</loc>
-    <lastmod>2020-05-30T23:51:09+01:00</lastmod>
+    <lastmod>2020-08-03T13:43:50+01:00</lastmod>
     <priority>0</priority>
   </url>
   
