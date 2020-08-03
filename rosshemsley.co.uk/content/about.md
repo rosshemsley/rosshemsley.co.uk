@@ -8,6 +8,7 @@ menu: "main"
 <center>
 
 _Software Engineer with an academic R&D background_
+
 _Sometimes writes things on the internet_
 
 _Works at [Lyft Level 5](https://www.lyft.com/self-driving-vehicles/engineers)_
