@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>My Deep Learning Toolchain</title>
+      <link>https://rosshemsley.co.uk/posts/deep_learning_toolchain/</link>
+      <pubDate>Thu, 24 Sep 2020 20:47:53 +0000</pubDate>
+      
+      <guid>https://rosshemsley.co.uk/posts/deep_learning_toolchain/</guid>
+      <description>Successful model development can be surprisingly dependent on good engineering practices. Despite this, many model implementations scattered about Github are difficult to follow and hard to recreate locally.  But what should a good model look like? I would propose that the gold standard for a model implemented on Github could be:   The dependencies may be installed automatically, using a single command.  I can build the model in a sandbox without polluting with my dev.</description>
+    </item>
+    
+    <item>
       <title>KISS: Backbones in Pytorch</title>
       <link>https://rosshemsley.co.uk/posts/kiss-backbone-pytorch/</link>
       <pubDate>Mon, 03 Aug 2020 13:19:31 +0100</pubDate>
@@ -41,15 +50,6 @@ Fortunately, it was possible to save enough of the original floor to use as a te
       <guid>https://rosshemsley.co.uk/posts/hanseatic_post_1/</guid>
       <description>First Steps In order to keep myself busy whilst locked down, I took on a project of restoring a rather dilapidated, though (in my opinion) charming, and pleasingly-proportioned keelboat. The boat was complete with both a mainsail and a jib and, despite being quite scruffy, actually was sailable. Despite this, the general condition of the boat was quite bad, and it was unlikely to deal well with strong gusts&amp;hellip;
 The boat is a Hanseatic 19.</description>
-    </item>
-    
-    <item>
-      <title>My Deep Learning Toolchain</title>
-      <link>https://rosshemsley.co.uk/posts/deep_learning_toolchain/</link>
-      <pubDate>Tue, 24 Sep 2019 20:47:53 +0000</pubDate>
-      
-      <guid>https://rosshemsley.co.uk/posts/deep_learning_toolchain/</guid>
-      <description>Successful model development can be surprisingly dependent on good engineering practices. Despite this, many model implementations scattered about Github are difficult to follow and hard to recreate locally.  But what should a good model look like? I would propose that the gold standard for a model implemented on Github could be:   The dependencies may be installed automatically, using a single command.  I can build the model in a sandbox without polluting with my dev.</description>
     </item>
     
     <item>

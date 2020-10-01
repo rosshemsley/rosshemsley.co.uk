@@ -6,10 +6,46 @@
     <description>Recent content in Categories on Ross Hemsley</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
-    <lastBuildDate>Mon, 03 Aug 2020 13:19:31 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 24 Sep 2020 20:47:53 +0000</lastBuildDate>
     
 	<atom:link href="https://rosshemsley.co.uk/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>deep learning</title>
+      <link>https://rosshemsley.co.uk/categories/deep-learning/</link>
+      <pubDate>Thu, 24 Sep 2020 20:47:53 +0000</pubDate>
+      
+      <guid>https://rosshemsley.co.uk/categories/deep-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>https://rosshemsley.co.uk/categories/python/</link>
+      <pubDate>Thu, 24 Sep 2020 20:47:53 +0000</pubDate>
+      
+      <guid>https://rosshemsley.co.uk/categories/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pytorch</title>
+      <link>https://rosshemsley.co.uk/categories/pytorch/</link>
+      <pubDate>Thu, 24 Sep 2020 20:47:53 +0000</pubDate>
+      
+      <guid>https://rosshemsley.co.uk/categories/pytorch/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>quickstart</title>
+      <link>https://rosshemsley.co.uk/categories/quickstart/</link>
+      <pubDate>Thu, 24 Sep 2020 20:47:53 +0000</pubDate>
+      
+      <guid>https://rosshemsley.co.uk/categories/quickstart/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>backbone</title>
@@ -30,24 +66,6 @@
     </item>
     
     <item>
-      <title>deep learning</title>
-      <link>https://rosshemsley.co.uk/categories/deep-learning/</link>
-      <pubDate>Mon, 03 Aug 2020 13:19:31 +0100</pubDate>
-      
-      <guid>https://rosshemsley.co.uk/categories/deep-learning/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>pytorch</title>
-      <link>https://rosshemsley.co.uk/categories/pytorch/</link>
-      <pubDate>Mon, 03 Aug 2020 13:19:31 +0100</pubDate>
-      
-      <guid>https://rosshemsley.co.uk/categories/pytorch/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>photography</title>
       <link>https://rosshemsley.co.uk/categories/photography/</link>
       <pubDate>Sat, 30 May 2020 22:54:14 +0100</pubDate>
@@ -62,24 +80,6 @@
       <pubDate>Sat, 30 May 2020 22:54:14 +0100</pubDate>
       
       <guid>https://rosshemsley.co.uk/categories/sailing/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>python</title>
-      <link>https://rosshemsley.co.uk/categories/python/</link>
-      <pubDate>Tue, 24 Sep 2019 20:47:53 +0000</pubDate>
-      
-      <guid>https://rosshemsley.co.uk/categories/python/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>quickstart</title>
-      <link>https://rosshemsley.co.uk/categories/quickstart/</link>
-      <pubDate>Tue, 24 Sep 2019 20:47:53 +0000</pubDate>
-      
-      <guid>https://rosshemsley.co.uk/categories/quickstart/</guid>
       <description></description>
     </item>
     

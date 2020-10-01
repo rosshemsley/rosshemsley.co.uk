@@ -6,7 +6,7 @@
     <description>Recent content in python on Ross Hemsley</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
-    <lastBuildDate>Tue, 24 Sep 2019 20:47:53 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 24 Sep 2020 20:47:53 +0000</lastBuildDate>
     
 	<atom:link href="https://rosshemsley.co.uk/categories/python/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>My Deep Learning Toolchain</title>
       <link>https://rosshemsley.co.uk/posts/deep_learning_toolchain/</link>
-      <pubDate>Tue, 24 Sep 2019 20:47:53 +0000</pubDate>
+      <pubDate>Thu, 24 Sep 2020 20:47:53 +0000</pubDate>
       
       <guid>https://rosshemsley.co.uk/posts/deep_learning_toolchain/</guid>
       <description>Successful model development can be surprisingly dependent on good engineering practices. Despite this, many model implementations scattered about Github are difficult to follow and hard to recreate locally.  But what should a good model look like? I would propose that the gold standard for a model implemented on Github could be:   The dependencies may be installed automatically, using a single command.  I can build the model in a sandbox without polluting with my dev.</description>
