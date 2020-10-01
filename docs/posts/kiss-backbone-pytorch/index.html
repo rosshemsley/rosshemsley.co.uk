@@ -6,7 +6,7 @@
     
     <title>KISS: Backbones in Pytorch | Ross Hemsley</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.54.0" />
+    <meta name="generator" content="Hugo 0.74.3" />
     
     
       <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -27,23 +27,18 @@
     
     <meta property="og:title" content="KISS: Backbones in Pytorch" />
 <meta property="og:description" content="Keep It Simple Stupid: CNN Backbones Many modern CNNs (convolutional neural networks) use a backbone to extract feature maps as the first step in their architecture: for example, some flavour of Resnet50.
-
 Helpfully, many of these backbones are implemented for us in torchvision, even with pre-trained models made available. This means we can often write simple code that looks like the following:
 1 2 3 4 5 6 7 8 9 10 11 12  from torchvision." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://rosshemsley.co.uk/posts/kiss-backbone-pytorch/" />
-<meta property="article:published_time" content="2020-08-03T13:19:31&#43;01:00"/>
-<meta property="article:modified_time" content="2020-08-03T13:45:00&#43;01:00"/>
-
+<meta property="article:published_time" content="2020-08-03T13:19:31+01:00" />
+<meta property="article:modified_time" content="2020-08-03T13:50:15+01:00" />
 <meta itemprop="name" content="KISS: Backbones in Pytorch">
 <meta itemprop="description" content="Keep It Simple Stupid: CNN Backbones Many modern CNNs (convolutional neural networks) use a backbone to extract feature maps as the first step in their architecture: for example, some flavour of Resnet50.
-
 Helpfully, many of these backbones are implemented for us in torchvision, even with pre-trained models made available. This means we can often write simple code that looks like the following:
 1 2 3 4 5 6 7 8 9 10 11 12  from torchvision.">
-
-
-<meta itemprop="datePublished" content="2020-08-03T13:19:31&#43;01:00" />
-<meta itemprop="dateModified" content="2020-08-03T13:45:00&#43;01:00" />
+<meta itemprop="datePublished" content="2020-08-03T13:19:31+01:00" />
+<meta itemprop="dateModified" content="2020-08-03T13:50:15+01:00" />
 <meta itemprop="wordCount" content="410">
 
 
@@ -52,7 +47,6 @@ Helpfully, many of these backbones are implemented for us in torchvision, even w
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="KISS: Backbones in Pytorch"/>
 <meta name="twitter:description" content="Keep It Simple Stupid: CNN Backbones Many modern CNNs (convolutional neural networks) use a backbone to extract feature maps as the first step in their architecture: for example, some flavour of Resnet50.
-
 Helpfully, many of these backbones are implemented for us in torchvision, even with pre-trained models made available. This means we can often write simple code that looks like the following:
 1 2 3 4 5 6 7 8 9 10 11 12  from torchvision."/>
 
@@ -207,32 +201,26 @@ if (!doNotTrack) {
       
       
     </header>
-    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
-
-<h2 id="keep-it-simple-stupid-cnn-backbones">Keep It Simple Stupid: CNN Backbones</h2>
-
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><h2 id="keep-it-simple-stupid-cnn-backbones">Keep It Simple Stupid: CNN Backbones</h2>
 <p>Many modern CNNs (convolutional neural networks) use a <em>backbone</em> to extract feature maps as the first step in their architecture: for example, some flavour of <em>Resnet50</em>.</p>
-
-<p><a title="Aphex34 / CC BY-SA (https://creativecommons.org/licenses/by-sa/4.0)" href="https://commons.wikimedia.org/wiki/File:Typical_cnn.png"><img width="512" alt="Typical cnn" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Typical_cnn.png/512px-Typical_cnn.png"></a></p>
-
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
 <p>Helpfully, many of these backbones are implemented for us in <a href="https://pytorch.org/docs/stable/torchvision/models.html">torchvision</a>, even with pre-trained models made available. This means we can often write simple code that looks like the following:</p>
-
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 9
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">10
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">11
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">12
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
 </span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> torchvision.models <span style="color:#f92672">import</span> resnet50
 <span style="color:#f92672">import</span> torch.nn
 
@@ -247,41 +235,36 @@ if (!doNotTrack) {
         <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>fancy_net(self<span style="color:#f92672">.</span>backbone(x))</code></pre></td></tr></table>
 </div>
 </div>
-
 <p>This makes it very easy to get started with building models that use the feature maps from the final layer of Resnet. However, in many cases, network architectures need to key into other layers from Resnet.
 One example is in the use of <a href="https://arxiv.org/abs/1612.03144">feature pyramids</a>, where different scales are extracted from different layers of the backbone.</p>
-
 <p>Many models implemented on Github will thus re-implement e.g. a Resnet backbone from scratch and copy it into their repo. However, there is an easier way!</p>
-
 <p>As long as we trust the API stability of the <code>torchvision</code> package (and we can pin the version of our dependencies to guarantee this) it&rsquo;s possible to actually re-use the backbones provided by torch vision.
 To do this, we simply create our own module holding the pretrained model internally, and then modify the forwards pass to call sequentially the same layers as the original model. The only difference is that we return more of the layers than the original</p>
-
 <p>Here is an example of extracting multiple layers of feature maps from the torchvision resnet backbone without re-implement resnet from scratch.</p>
-
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 9
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">10
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">11
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">12
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">13
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">14
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">15
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">16
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">17
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">18
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">19
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">20
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
 </span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> torch.nn <span style="color:#f92672">as</span> nn
 <span style="color:#f92672">from</span> torchvision.models <span style="color:#f92672">import</span> resnet50
 
@@ -304,9 +287,7 @@ To do this, we simply create our own module holding the pretrained model interna
         <span style="color:#66d9ef">return</span> layer_2, layer_3, layer_4</code></pre></td></tr></table>
 </div>
 </div>
-
 <p>In this way, we can spend a lot less time debugging our backbones and get on with solving the problem at hand. Furthermore, users of the code can be confident that the backbone is implemented in the same way across different models.</p>
-
 <p>For a full worked example, this is the same technique I used in my implementation of <a href="https://github.com/rosshemsley/fcos">FCOS</a>, which uses a feature pyramid.</p>
 <ul class="pa0">
   

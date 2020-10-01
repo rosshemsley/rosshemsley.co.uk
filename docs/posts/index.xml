@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Ross Hemsley</title>
@@ -18,7 +18,6 @@
       
       <guid>https://rosshemsley.co.uk/posts/kiss-backbone-pytorch/</guid>
       <description>Keep It Simple Stupid: CNN Backbones Many modern CNNs (convolutional neural networks) use a backbone to extract feature maps as the first step in their architecture: for example, some flavour of Resnet50.
-
 Helpfully, many of these backbones are implemented for us in torchvision, even with pre-trained models made available. This means we can often write simple code that looks like the following:
 1 2 3 4 5 6 7 8 9 10 11 12  from torchvision.</description>
     </item>
@@ -29,7 +28,7 @@ Helpfully, many of these backbones are implemented for us in torchvision, even w
       <pubDate>Sat, 30 May 2020 22:54:14 +0100</pubDate>
       
       <guid>https://rosshemsley.co.uk/posts/hanseatic_post_2/</guid>
-      <description>_Back to post 1_
+      <description>Back to post 1
 Starting the the floor The first post in this series was rather destructive. The floor was torn out, and the deck trim was prised off. This post is more constructive, and covers the first few steps of building a new floor.
 Fortunately, it was possible to save enough of the original floor to use as a template. Working in this way was much simpler than trying to measure out the awkwardly curved inner profile of the hull!</description>
     </item>
@@ -40,7 +39,17 @@ Fortunately, it was possible to save enough of the original floor to use as a te
       <pubDate>Fri, 29 May 2020 20:49:14 +0100</pubDate>
       
       <guid>https://rosshemsley.co.uk/posts/hanseatic_post_1/</guid>
-      <description>First Steps In order to keep myself busy whilst locked down, I took on a project of restoring a rather dilapidated, though (in my opinion) charming, and pleasingly-proportioned keelboat. The boat was complete with both a mainsail and a jib and, despite being quite scruffy, actually was sailable. Despite this, the general condition of the boat was quite bad, and it was unlikely to deal well with strong gusts&amp;hellip;</description>
+      <description>First Steps In order to keep myself busy whilst locked down, I took on a project of restoring a rather dilapidated, though (in my opinion) charming, and pleasingly-proportioned keelboat. The boat was complete with both a mainsail and a jib and, despite being quite scruffy, actually was sailable. Despite this, the general condition of the boat was quite bad, and it was unlikely to deal well with strong gusts&amp;hellip;
+The boat is a Hanseatic 19.</description>
+    </item>
+    
+    <item>
+      <title>My Deep Learning Toolchain</title>
+      <link>https://rosshemsley.co.uk/posts/deep_learning_toolchain/</link>
+      <pubDate>Tue, 24 Sep 2019 20:47:53 +0000</pubDate>
+      
+      <guid>https://rosshemsley.co.uk/posts/deep_learning_toolchain/</guid>
+      <description>Successful model development can be surprisingly dependent on good engineering practices. Despite this, many model implementations scattered about Github are difficult to follow and hard to recreate locally.  But what should a good model look like? I would propose that the gold standard for a model implemented on Github could be:   The dependencies may be installed automatically, using a single command.  I can build the model in a sandbox without polluting with my dev.</description>
     </item>
     
     <item>
@@ -49,7 +58,7 @@ Fortunately, it was possible to save enough of the original floor to use as a te
       <pubDate>Tue, 30 Jul 2019 07:04:35 +0000</pubDate>
       
       <guid>https://rosshemsley.co.uk/posts/linking/</guid>
-      <description>How did things get this bad? The Axioms of linking Every few months I end up in the a shady corner of the internet, with twenty tabs open searching for variations on &amp;lsquo;why the $%^&amp;amp;!@ does this not work&amp;rsquo;. Hours later I end up re-discovering the truth: using binary libraries in $CURRENT_YEAR still pretty much sucks.
+      <description>How did things get this bad?The Axioms of linking Every few months I end up in the a shady corner of the internet, with twenty tabs open searching for variations on &amp;lsquo;why the $%^&amp;amp;!@ does this not work&amp;rsquo;. Hours later I end up re-discovering the truth: using binary libraries in $CURRENT_YEAR still pretty much sucks.
 So let&amp;rsquo;s try and get something positive out of this, and at least write up the facts of the situation.</description>
     </item>
     

@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en-uk">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>My Deep Learning Toolchain | Ross Hemsley</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.74.3" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.1cb140d8ba31d5b2f1114537dd04802a.css" rel="stylesheet">
+    
+
+    
+
+    
+      
+    
+
+    
+    
+    <meta property="og:title" content="My Deep Learning Toolchain" />
+<meta property="og:description" content="Successful model development can be surprisingly dependent on good engineering practices. Despite this, many model implementations scattered about Github are difficult to follow and hard to recreate locally.  But what should a good model look like? I would propose that the gold standard for a model implemented on Github could be:   The dependencies may be installed automatically, using a single command.  I can build the model in a sandbox without polluting with my dev." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://rosshemsley.co.uk/posts/deep_learning_toolchain/" />
+<meta property="article:published_time" content="2019-09-24T20:47:53+00:00" />
+<meta property="article:modified_time" content="2020-10-01T11:48:51+01:00" />
+<meta itemprop="name" content="My Deep Learning Toolchain">
+<meta itemprop="description" content="Successful model development can be surprisingly dependent on good engineering practices. Despite this, many model implementations scattered about Github are difficult to follow and hard to recreate locally.  But what should a good model look like? I would propose that the gold standard for a model implemented on Github could be:   The dependencies may be installed automatically, using a single command.  I can build the model in a sandbox without polluting with my dev.">
+<meta itemprop="datePublished" content="2019-09-24T20:47:53+00:00" />
+<meta itemprop="dateModified" content="2020-10-01T11:48:51+01:00" />
+<meta itemprop="wordCount" content="3127">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="My Deep Learning Toolchain"/>
+<meta name="twitter:description" content="Successful model development can be surprisingly dependent on good engineering practices. Despite this, many model implementations scattered about Github are difficult to follow and hard to recreate locally.  But what should a good model look like? I would propose that the gold standard for a model implemented on Github could be:   The dependencies may be installed automatically, using a single command.  I can build the model in a sandbox without polluting with my dev."/>
+
+      
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-40455296-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+    
+  </head>
+
+  <body class="ma0 avenir bg-near-white production">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-dark-gray">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://rosshemsley.co.uk/" class="f3 fw2 hover-white no-underline white-90 dib">
+      Ross Hemsley
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/" title=" page">
+              
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/about/" title="About page">
+              About
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/posts/" title="Posts page">
+              Posts
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/pubs/" title="Publications page">
+              Publications
+            </a>
+          </li>
+          
+        </ul>
+      
+      
+
+
+
+
+
+
+
+<a href="https://www.linkedin.com/in/rosshemsley/" target="_blank" class="link-transition linkedin link dib z-999 pt3 pt0-l mr1" title="LinkedIn link" rel="noopener" aria-label="follow on LinkedIn——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+<a href="https://github.com/rosshemsley" target="_blank" class="link-transition github link dib z-999 pt3 pt0-l mr1" title="Github link" rel="noopener" aria-label="follow on Github——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+  <path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        POSTS
+      </aside>
+      
+
+
+
+
+  <div id="sharing" class="mt3">
+
+    
+    <a href="https://www.facebook.com/sharer.php?u=https://rosshemsley.co.uk/posts/deep_learning_toolchain/" class="facebook no-underline" aria-label="share on Facebook">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M28.765,50.32h6.744V33.998h4.499l0.596-5.624h-5.095  l0.007-2.816c0-1.466,0.14-2.253,2.244-2.253h2.812V17.68h-4.5c-5.405,0-7.307,2.729-7.307,7.317v3.377h-3.369v5.625h3.369V50.32z   M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;"/></svg>
+
+    </a>
+
+    
+    
+    <a href="https://twitter.com/share?url=https://rosshemsley.co.uk/posts/deep_learning_toolchain/&amp;text=My%20Deep%20Learning%20Toolchain" class="twitter no-underline" aria-label="share on Twitter">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+    </a>
+
+    
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://rosshemsley.co.uk/posts/deep_learning_toolchain/&amp;title=My%20Deep%20Learning%20Toolchain" class="linkedin no-underline" aria-label="share on LinkedIn">
+      <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+    </a>
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1">My Deep Learning Toolchain</h1>
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2019-09-24T20:47:53Z">September 24, 2019</time>
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>
+Successful model development can be surprisingly dependent on good engineering practices. Despite this, many model implementations scattered about Github are difficult to follow and hard to recreate locally.
+</p>
+
+<p>
+But what should a <em>good model</em> look like? I would propose that the gold standard for a model implemented on Github could be:
+</p>
+<ol>
+<li> The dependencies may be installed automatically, using a single command.</li>
+<li> I can build the model in a sandbox without polluting with my dev. environment.</li>
+<li> I can easily retrain (and retune!) the model the model exactly as the author did during their development.</li>
+<li> I can easily test the inference pass.</li>
+<li> I can easily import the model into my own workflow and use it as part of my own code.</li>
+</ol>
+<p>
+It may be that I've never come across a model that met this standard in practical day-to-day development...! But I claim that achieving these things is surprisingly easy given the modern tools available to us.
+</p>
+<p>
+Furthermore, many may simply respond "just ship everything in a Docker container". My response to this is that Docker is a great tool for
+<em>deploying</em> a stable, reproducible environment, but Docker images provide a poor basis for sharing code and enabling collaboration.
+In this post, we'll focus on designing models that can be <em>installed and imported with a single command, without Docker, on any OS, on any platform,
+using the vanilla tools our language provides</em>.
+</p>
+<p>
+So, let's dive in and look at the tools that I use to train models, and how they can be used to meet the gold standard I gave above.
+</p>
+
+<h2>Python 3 for model development</h2>
+<img src="/posts/deep_learning_toolchain_images/python_logo.png" style="width: 150px; float: left; padding: 20px">
+<p>
+It may not be controversial these days, but it's worth highlighting that Python 3 is an excellent choice for prototyping and releasing deep learning models. The key feature here is the library support, which is unmatched by other languages.
+I tend to target <strong>Python 3.7.5</strong> or later, because I make heavy use of <em><a href="https://docs.python.org/3/library/dataclasses.html">dataclass</a></em>, and it's recent enough to support type annotations. Ubuntu Focal now includes Python 3.8 by default,
+so many users will start being able to support this out of the box.
+</p>
+<h3>Bonus pionts: type annotations</h3>
+<p>
+If you use type annotations (correctly) in your model, you will get serious points from me.
+It's very common that models use native lists, tensors, and numpy arrays almost interchangeably as function
+arguments, and so using type hints can make the data flow in your model easier to follow and debug.
+</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> dataclasses <span style="color:#f92672">import</span> dataclass
+<span style="color:#f92672">from</span> typing <span style="color:#f92672">import</span> List, Optional
+
+<span style="color:#f92672">import</span> numpy <span style="color:#f92672">as</span> np
+<span style="color:#f92672">from</span> PIL <span style="color:#f92672">import</span> Image
+
+<span style="color:#a6e22e">@dataclass</span>
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">DataSample</span>:
+    img: Image
+    bboxes: List[np<span style="color:#f92672">.</span>ndarray]
+    scores: Optional[List[float]]
+
+<span style="color:#f92672">...</span>
+
+sample <span style="color:#f92672">=</span> DataSample(Image(), [np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">4</span>])], scores<span style="color:#f92672">=</span>None)</code></pre></div>
+<em><strong>Above:</strong> an example of using modern Python features to write a clear and simple data container
+for a training sample in a model. The dataclass decorator adds all of the utility functions we may want (including
+a pretty string reprsentation so we can print the object), and the type annotations make it clear what the user 
+should expect the fields to contain.</em>
+
+<h2> Use <em>pyenv</em> to manage Python versions</h2>
+<p>
+For better or worse, many incompatible versions of Python now exist, and it's easy to get
+in a tangle with different Python installs, especially when making system-wide changes.
+</p>
+<p>
+My advice here is to do it properly, and do it once: learn to use <em>pyenv</em> to manage all of your Python
+installs.
+</p>
+<p>
+Pyenv is a tool that provides a shim around the <em>python</em> command which redirects it to the correct version 
+of Python for the current context. For a given project, you can use <em>pyenv local 3.7.5</em> in a directory
+to tell pyenv to use Python 3.7.5 from now on when calling Python in that directory.
+</p>
+<p>
+If you don't have the version of Python installed that you need, you can use pyenv to install it.
+If the universe is feeling good to you today, <em>pyenv install 3.7.5</em> should be sufficient to fetch and install Python 3.7.5
+for you automatically on any platform.
+</p>
+<p>
+<strong>In practice</strong>, things don't always go so smoothly with pyenv, however I really believe
+it's really worth the hassle of spending the time and getting it working - most issues you might enouncter are well understood, and documented on stackoverflow.
+</p>
+<p>
+<h3>A few common tips for common pyenv issues</h3>
+<ul>
+<li><strong>It's not working!</strong> - make sure you have activated it (google "pyenv activate"). Typically you need to add this to e.g. your .bashrc</li>
+<li><strong><em>pyenv install</em> failed!</strong> - you may be missing system dependencies. Be patient, and trawl stackoverflow. It can be made to work!</li>
+</ul>
+</p>
+
+<h2>Use <em>poetry</em> to manage your project and dependencies</h2> 
+<p>
+Keeping your Python project sandboxed is crucial aspect of remaining sane when using Python.
+We typically use <em>virtualenvs</em>, or virtual environments, to achieve this. These are are essentially directories containing their own
+Python install, and a local copy of all the packages your project needs. 
+</p>
+<p>
+A separate but related problem is ensuring you actually <em>have</em> the dependencies your project needs
+installed into that virtualenv. 
+</p>
+<p>
+Once upon a time, you may have used `virtualenv` and `requirements.txt` or `anaconda` or `pipenv` to do these things.
+</p>
+<p>
+Well, my advice is <strong>steer clear from all of them</strong> and move straight to <a href="https://python-poetry.org/">poetry</a>.
+It's very much the new kid on the block, but from my perspective it's already miles ahead of the competition.
+I have managed to deploy a number of complex Python applications in a professional capacity using
+poetry, and I have found it both plays very well with other tools and is generally well designed.
+</p>
+<p>
+Poetry uses the modern <a href="https://snarky.ca/what-the-heck-is-pyproject-toml/">pyproject.toml</a> way of defining a package, and this essentially replaces the old setup.py and friends.
+It would be out of scope to explain why pyproject.toml is important and worth learning about, so I recommend some googling here!
+</p>
+<p>
+Ok, so let's create a new project! ... don't forget to `pyenv local 3.7.5` first, to ensure you are using the correct version of Python (if you forgot, you can run it later, and then go
+back and edit pyproject.toml to make sure it's set correctly.)
+</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ poetry new fancynet</code></pre></div>
+<p>
+Yes, it's as easy as that. Go ahead and move in the directory poetry created for you, and you can now
+</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ poetry install</code></pre></div>
+and poetry will automatically create a managed virtualenv for you. Let's now install some of the tools of our trade,
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ poetry add torch
+$ poetry add numpy</code></pre></div>
+<p>
+Poetry will install them to the virtualenv and add them to the pyproject.toml. It will 
+also <strong>pin</strong> the exact versions of the dependencies into a lock file so that <strong>other users installing your package
+can reproduce precisely the same environment as you</strong>. This is perhaps the most important step here, and is worth underscoring:
+this is how we are able to achieve <em>reproducibility</em>. 
+</p>
+<h3>The Best Bit About Poetry</h3>
+<p>
+Poetry was designed to be good at both developing packages and <em>building/sharing/publishing</em> them.
+These latter features are sorely missing from other tools (such as pyenv), and they are really the killer
+feature of poetry.
+</p>
+<p>
+Let's suppose you pushed your <em>fancynet</em> package to github (don't forget to check in the lock file!).
+Now, <strong>anyone using a recent version of pip can install your package with a single command</strong>,
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ pip install git+https://github.com/myusername/fancynet</code></pre></div>
+<p>
+Pip will fetch the code from github, look into the pyproject.toml, see it uses poetry, and then just do
+everything for you, including installing poetry, and fetching the correct versions of the pinned dependencies!
+<strong>
+This is totally magic and not enough people know this trick.</strong> Go forth and spread this knowledge!
+</p>
+<p>
+If your package reaches a level of maturity where you'd like to publish it to a public package repository (e.g. pypi),
+you can use poetry to manage this. To bump the version (you can also bump the minor and major versions this way), use
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ poetry version patch</code></pre></div>
+Then to build and publish to pypi, use
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ poetry build
+$ poetry publish</code></pre></div>
+The defaults used by poetry are spookily well designed, and I have never had any problems publishing packages in this way.
+</p>
+
+<h2>Use <em>click</em> to manage your entrypoint</h2> 
+<p>
+An oft-overlooked step in building a good python package is organising the files and "entrypoints" (or "executables"). 
+I believe it's worth imagining that someone else is going to use your code at somepoint, and so I try to create nicely named
+subdirectories for each part of my model: "datasets", "models", "inference", but also <strong>"cli"</strong>.
+In this "cli" directory, I usually have several subdirectories "train", "tune", "test". Each of these contains a single
+"__main__.py", which contains the (small!) shim code needed to perform those actions.
+</p>
+<p>
+Inside "__main__.py" I then use <a href="https://click.palletsprojects.com/en/7.x/">click</a> to manage arguments and the entrypoint.
+I have found it much easier to use than argparse, and I do think it's worth the effort!
+</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> click
+<span style="color:#f92672">from</span> omegaconf <span style="color:#f92672">import</span> OmegaConf
+<span style="color:#f92672">from</span> pytorch_lightning <span style="color:#f92672">import</span> Trainer
+
+<span style="color:#f92672">from</span> mynet.models <span style="color:#f92672">import</span> MyNet
+
+<span style="color:#a6e22e">@click.command</span>()
+<span style="color:#a6e22e">@click.option</span>(<span style="color:#e6db74">&#39;--dataset-root-dir&#39;</span>, help<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;directory containing the dataset&#39;</span>)
+<span style="color:#a6e22e">@click.option</span>(<span style="color:#e6db74">&#39;--config-path&#39;</span>, default<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;config.yaml&#34;</span>, help<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;The config file to use.&#39;</span>)
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">train</span>(dataset_root_dir: str, config_path: str):
+    cfg <span style="color:#f92672">=</span> OmegaConf<span style="color:#f92672">.</span>load(config_path)
+
+    model <span style="color:#f92672">=</span> MyNet(cfg)
+    trainer <span style="color:#f92672">=</span> Trainer(gpus<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>, profiler<span style="color:#f92672">=</span>True)
+    trainer<span style="color:#f92672">.</span>fit(model)
+
+<span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;__main__&#39;</span>:
+    train()</code></pre></div>
+<p>
+Now, if we are developing locally, we can run this using
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ poetry run python -m mynet.cli.train --dataset-root-dir /foo/bar/baz</code></pre></div>
+Which is fine and good, but if we want to go 10X, we can also use a neat future of project.toml and add an entrypoint
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[<span style="color:#a6e22e">tool</span>.<span style="color:#a6e22e">poetry</span>.<span style="color:#a6e22e">scripts</span>]
+<span style="color:#a6e22e">train</span> = <span style="color:#e6db74">&#34;mynet.cli.train.__main__:train&#34;</span></code></pre></div>
+Once we do this, users can run training using
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ poetry run train --dataset-root-dir /foo/bar/baz</code></pre></div>
+or if you "activate" the environment, simply
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ train --dataset-root-dir /foo/bar/baz</code></pre></div>
+</p>
+<p>
+It's possible to add multiple entrypoints to the pyproject.toml, so you can easily create one for training, tuning, testing.
+This is helpful for users trying to discover how to train or evaluate your model from scratch!
+</p>
+<p>
+Do note that if a user installs your package into a shared virtualenv, you may wish to choose a more meaningful name than train!
+</p>
+
+<h2>Use <em>pytorch</em> to develop your net</h2>
+<p>
+The key primitives making up modern deep learning are: operations on tensors, a computation graph, and the functionality to automatically
+compute derivatives. Pytorch is a library designed to excel at providing these primitives, and surprisingly little else.
+</p>
+<p>
+This decision to focus on implementing this set of features as flexible, compsable, free <em>functions</em>, rather than building
+an opinionated <em>framework</em> for Deep Learning is (in my opinion) what makes pytorch so successful. Whilst some
+steps can feel verbose, keeping the exact operations that pytoch does at a high level abstraction helps users maintain a clear mental model
+of what the library is actually doing for them. This suits my personal preference for "verbose, boring code"
+being superior to "clever, terse code".
+</p>
+<p>
+One thing worth noting is that to get the most of pytorch, you will ultimately need a Cuda gpu. However,
+pytorch is quite happy to install and run on CPU, and I believe <strong>it is worth ensuring that any model you build
+can be executed on the cpu</strong>, even where it would be prohibitively slow to train your net. this brings
+a few benefits, such as making it possible to run your tests in an arbitrary environment (such as in continuous integration),
+and also allowing development on a dev. laptop such as a macbook.
+</p>
+<p>
+Finally, pytorch has grown quickly and gained many new built-in features. Despite this, it's still common to find
+nets on Github using custom Cuda code to implement operations (such as nms - which is now natively provided by torchvision).
+My advice is as follows: <strong>as much as physically possible, keep your model using pure Python with no custom C or Cuda code</strong>.
+The pain involved in making your model meet the imagined gold standard above when using external code is a significant undertaking, and worth avoiding
+at all costs, if possible. Usually, this involves using modern pytorch and torchvision libraries, and sometimes, it may mean
+sacrificing a small amount of performance. My suggest is to <strong>consider this tradeoff carefully!</strong>
+</p>
+<h2>Use pytorch lightning to structure your model</h2>
+<p>
+When my colleague came to me pitching <a href="https://pytorch-lightning.readthedocs.io/en/latest/">pytorch lightning</a>
+as part of our model workflow, I was very sceptical. Generally, as engineers we are <a href="https://catonmat.net/frameworks-dont-make-sense">suspicious</a> of using frameworks, which
+limit flexibility and impose conventions on our projects that can conflict with our existing code and at worst, fail
+to stay up-to-date with the development of the surrounding ecosystem of libraries.
+</p>
+<p>
+Fortunately my colleague convinced me to try lightning, and I now wholeheartedly recommend it for model development and use it
+in my own projects. Lightning's success is that it provides a sane, modular, structure on top of pytorch to get the most
+common tasks of Deep Learning done: loading a val and train set, logging training progress and images, putting the model into eval mode for the validation run, saving
+the best checkpoints by inspecting the validation loss... When we prototype models, it's easy to forget or procrastinate these steps,
+or implement them incorrectly, and my experience is that lightning has done a very good job of doing what you need without getting in the way.
+</p>
+<p>
+<strong>Probably, moving to use lightning is the single most important step I made in rapidly prototyping models</strong>.
+</p>
+<p>
+It can be tempting to find an existing model on Github (I have seen engineers fork the Facebook detectron repo as a starting point),
+but I think this is a mistake: progress is rapidly being made in pytorch and other libraries, and so structuring your code around
+an old project can be a bad idea. Lightning makes it easy to start afresh each time you build a model, using the most modern workflows
+and most modern libraries.
+</p>
+<h3>A note on visualization</h3>
+<p>
+Understanding how our models work is crucial to debugging them. In this respect, lightning helps us enormously.
+Without any prompting, a totally vanilla pytorch lightning model will log key stats (and even model hyperparameters) to tensorboard.
+This can of course be configured to use different log sinks (such as WandB). And of course, one can easily add extra logging, fields, images etc. 
+</p>
+<p>
+With respect to logging to console: my advice is try to <strong>avoid</strong> it in code that you push to github!
+print()ing directly to standard out makes your model a bad actor for users wishing to import and use it as part of their own code,
+and there is a simple and standard alternative: use the Python logger (which writes to stderr, not stdout), and select the level correctly (warn, info, debug etc.).
+Take a little time reading the docs on this and avoid print, and note that by default the logger typically squashes .info level logs, so you may
+wish to turn this up.
+</p>
+<p>
+A final note: if you are just starting deep learning, my advice would be to train a few models with vanilla pytorch before jumping into
+lightning, as this will help build intuition!
+</p>
+
+<h2>Use <em>OmegaConf</em> to manage your config</h2>
+<p>
+When developing models, it's easy to end up with magic constants all over our code: when setting
+convolution kernel sizes, when trying out different loss functions, and generally whilst iterating on different
+architectures. My advice here is to start early with a principled approach to config, and to avoid 
+magic constants littering your code as soon as possible.
+</p>
+<p>
+The key benefit comes when combing this advice with the advice above to use pytorch lightning: lightning will save
+the hyperparameters in your config into each model checkpoint that it (automatically) creates! This means that
+even when you make large non-trivial changes to your model's code, previously trained checkpoints can still be loaded, 
+evaluated, and tested with the current versions of the code. This backwards compatibility can be very hard to add
+retrospectively, and turns out to be very easy to add early, and so I believe is worth the effort.
+</p>
+<p>
+Using this approach, and checking in the config files used during training can further help users ensure reproducibility
+in the results you have obtained.
+</p>
+<p>
+Of the (small number) of different configuration magement tools I have tried, the one I would recommend is "OmegaConf".
+The key feature for me was that it's simple, unobtrusive, can easily be converted to and from native Python objects, and
+supports multiple kinds of configuration file.
+</p>
+<h2>Use <em>Raytune</em> to tune your model</h2>
+<p>
+Automated hyperparameter tuning may be one of those things that we all know is a good idea, but that in practice
+feels like a lot of effort and can be easily to put off. I felt this way myself until I realised how easy it was to
+achieve using modern tools. Many of us (me included in many cases...) continue to use "GSD" (Graduate Student Descent) to find the optimal parameters
+in our models, which is painfully slow and unsatisfying.
+</p>
+<p>
+But, I have good news: now that we have used lightning to define our model and OmegaConf to manage our config, we will find that the jump to automated
+hyperparameter tuning is surprisingly modest!
+</p>
+<p>
+A fully worked example of tuning a pytorch lightning model is provided in the <a href="https://docs.ray.io/en/master/tune/tutorials/tune-pytorch-lightning.html">docs</a>
+and adapting this to another model and making it work is not too bad.
+</p>
+<p>
+It took me a little while to grok what raytune is doing, but the key thing to understand is that it'll spawn several different
+subprocesses, each of which with an instance of your wrapped model inside of it. The wrapper you provide contains a lightweight
+callback which, when invoked, sends a message back to the parent process to report on current progress.
+</p>
+<p>
+Raytune has a lot of tunables and can rapidly become confusing, though I found even the most basic config of randomly sampling
+across a set of hyperparameters immediately sped up my progress in model development! It's worth noting that one can tell raytune 
+how many resources to allocate to each of the child processes (such as 0.25 of a gpu), which means that raytune can run several
+trials in parallel if you have enough resources on your gpu.
+</p>
+
+<h2>Putting it all together</h2>
+<p>
+At this point I was tempted to link to an "example" repo with an example model, but then I don't think copying an 
+existing repo is the best way to start, I believe the best way is to know your tools well, and be able to quickly set up
+a new environment from scratch each time, always getting better as the tools around us evolve.
+</p>
+<p>
+So, let's instead talk through the steps I (currently) use to start training a new model, using the advice above.
+<p>
+<ol>
+    <li><strong>Decide on which Python version to use</strong> - "pyenv local 3.7.5"</li>
+    <li><strong>Create a new poetry project</strong> - "poetry new mynet"</li>
+    <li><strong>Install my tools</strong> - "poetry add torch"... etc.</li>
+    <li><strong>Create an entrypoint using click</strong></li>
+    <li><strong>Create a pytorch lightning module</strong> - By reading the quickstart lightning docs!</li>
+    <li><strong>Create a config file</strong></li>
+    <li><strong>Build my model...</strong></li>
+    <li><strong>Create an entrypoint to tune the model with raytune</strong></li>
+    <li><strong>Tune my model...</strong></li>
+</ol>
+</p>
+<p>
+Well now... that was a long-winded post. Hopefully those of you that made it here got something from it 🙂
+</p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-dark-gray bottom-0 w-100 pa3" role="contentinfo">
+    <div class="flex justify-between">
+        <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://rosshemsley.co.uk/">
+            &copy; 2020 Ross Hemsley
+        </a>
+        <div>
+
+
+
+
+
+
+
+<a href="https://www.linkedin.com/in/rosshemsley/" target="_blank" class="link-transition linkedin link dib z-999 pt3 pt0-l mr1" title="LinkedIn link" rel="noopener" aria-label="follow on LinkedIn——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+<a href="https://github.com/rosshemsley" target="_blank" class="link-transition github link dib z-999 pt3 pt0-l mr1" title="Github link" rel="noopener" aria-label="follow on Github——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+  <path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+
+
+
+</div>
+    </div>
+</footer>
+
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>

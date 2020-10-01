@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Code Review on Ross Hemsley</title>
+    <title>code-review on Ross Hemsley</title>
     <link>https://rosshemsley.co.uk/categories/code-review/</link>
-    <description>Recent content in Code Review on Ross Hemsley</description>
+    <description>Recent content in code-review on Ross Hemsley</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
     <lastBuildDate>Sat, 12 Jan 2019 13:07:20 +0000</lastBuildDate>

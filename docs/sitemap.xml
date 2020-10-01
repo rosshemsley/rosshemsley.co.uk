@@ -1,10 +1,50 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://rosshemsley.co.uk/categories/backbone/</loc>
+    <lastmod>2020-08-03T13:50:15+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rosshemsley.co.uk/categories/</loc>
+    <lastmod>2020-10-01T11:48:51+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rosshemsley.co.uk/categories/cnns/</loc>
+    <lastmod>2020-08-03T13:50:15+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rosshemsley.co.uk/categories/deep-learning/</loc>
+    <lastmod>2020-10-01T11:48:51+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://rosshemsley.co.uk/posts/kiss-backbone-pytorch/</loc>
-    <lastmod>2020-08-03T13:45:00+01:00</lastmod>
+    <lastmod>2020-08-03T13:50:15+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rosshemsley.co.uk/posts/</loc>
+    <lastmod>2020-10-01T11:48:51+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rosshemsley.co.uk/categories/pytorch/</loc>
+    <lastmod>2020-10-01T11:48:51+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rosshemsley.co.uk/tags/photography/</loc>
+    <lastmod>2020-05-30T23:51:09+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rosshemsley.co.uk/categories/photography/</loc>
+    <lastmod>2020-05-30T23:51:09+01:00</lastmod>
   </url>
   
   <url>
@@ -13,8 +53,38 @@
   </url>
   
   <url>
+    <loc>https://rosshemsley.co.uk/tags/sailing/</loc>
+    <lastmod>2020-05-30T23:51:09+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rosshemsley.co.uk/categories/sailing/</loc>
+    <lastmod>2020-05-30T23:51:09+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rosshemsley.co.uk/tags/</loc>
+    <lastmod>2020-05-30T23:51:09+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://rosshemsley.co.uk/posts/hanseatic_post_1/</loc>
     <lastmod>2020-05-30T23:51:09+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rosshemsley.co.uk/posts/deep_learning_toolchain/</loc>
+    <lastmod>2020-10-01T11:48:51+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rosshemsley.co.uk/categories/python/</loc>
+    <lastmod>2020-10-01T11:48:51+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rosshemsley.co.uk/categories/quickstart/</loc>
+    <lastmod>2020-10-01T11:48:51+01:00</lastmod>
   </url>
   
   <url>
@@ -33,6 +103,31 @@
   </url>
   
   <url>
+    <loc>https://rosshemsley.co.uk/tags/code-review/</loc>
+    <lastmod>2020-03-05T18:00:53+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rosshemsley.co.uk/categories/code-review/</loc>
+    <lastmod>2020-03-05T18:00:53+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rosshemsley.co.uk/tags/engineering/</loc>
+    <lastmod>2020-03-05T18:00:53+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rosshemsley.co.uk/categories/engineering/</loc>
+    <lastmod>2020-03-05T18:00:53+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rosshemsley.co.uk/tags/go/</loc>
+    <lastmod>2020-03-05T18:00:53+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://rosshemsley.co.uk/posts/file-io/</loc>
     <lastmod>2020-03-05T18:00:53+00:00</lastmod>
   </url>
@@ -48,6 +143,16 @@
   </url>
   
   <url>
+    <loc>https://rosshemsley.co.uk/tags/caving/</loc>
+    <lastmod>2019-01-13T23:26:52+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rosshemsley.co.uk/categories/caving/</loc>
+    <lastmod>2019-01-13T23:26:52+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://rosshemsley.co.uk/posts/chimera/</loc>
     <lastmod>2019-01-13T19:18:17+00:00</lastmod>
   </url>
@@ -55,114 +160,6 @@
   <url>
     <loc>https://rosshemsley.co.uk/posts/barista/</loc>
     <lastmod>2019-01-13T23:26:52+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://rosshemsley.co.uk/categories/backbone/</loc>
-    <lastmod>2020-08-03T13:45:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://rosshemsley.co.uk/categories/</loc>
-    <lastmod>2020-08-03T13:45:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://rosshemsley.co.uk/tags/caving/</loc>
-    <lastmod>2019-01-13T19:18:17+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://rosshemsley.co.uk/categories/caving/</loc>
-    <lastmod>2019-01-13T19:18:17+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://rosshemsley.co.uk/categories/cnns/</loc>
-    <lastmod>2020-08-03T13:45:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://rosshemsley.co.uk/tags/code-review/</loc>
-    <lastmod>2020-03-05T18:00:53+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://rosshemsley.co.uk/categories/code-review/</loc>
-    <lastmod>2020-03-05T18:00:53+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://rosshemsley.co.uk/categories/deep-learning/</loc>
-    <lastmod>2020-08-03T13:45:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://rosshemsley.co.uk/tags/engineering/</loc>
-    <lastmod>2020-03-05T18:00:53+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://rosshemsley.co.uk/categories/engineering/</loc>
-    <lastmod>2020-03-05T18:00:53+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://rosshemsley.co.uk/tags/go/</loc>
-    <lastmod>2020-03-05T18:00:53+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://rosshemsley.co.uk/tags/photography/</loc>
-    <lastmod>2020-05-30T23:51:09+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://rosshemsley.co.uk/categories/photography/</loc>
-    <lastmod>2020-05-30T23:51:09+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://rosshemsley.co.uk/posts/</loc>
-    <lastmod>2020-08-03T13:45:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://rosshemsley.co.uk/categories/pytorch/</loc>
-    <lastmod>2020-08-03T13:45:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://rosshemsley.co.uk/tags/sailing/</loc>
-    <lastmod>2020-05-30T23:51:09+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://rosshemsley.co.uk/categories/sailing/</loc>
-    <lastmod>2020-05-30T23:51:09+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://rosshemsley.co.uk/tags/</loc>
-    <lastmod>2019-01-13T19:18:17+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
 </urlset>

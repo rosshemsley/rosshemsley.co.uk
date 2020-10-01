@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Cnns on Ross Hemsley</title>
+    <title>CNNs on Ross Hemsley</title>
     <link>https://rosshemsley.co.uk/categories/cnns/</link>
-    <description>Recent content in Cnns on Ross Hemsley</description>
+    <description>Recent content in CNNs on Ross Hemsley</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
     <lastBuildDate>Mon, 03 Aug 2020 13:19:31 +0100</lastBuildDate>
@@ -18,7 +18,6 @@
       
       <guid>https://rosshemsley.co.uk/posts/kiss-backbone-pytorch/</guid>
       <description>Keep It Simple Stupid: CNN Backbones Many modern CNNs (convolutional neural networks) use a backbone to extract feature maps as the first step in their architecture: for example, some flavour of Resnet50.
-
 Helpfully, many of these backbones are implemented for us in torchvision, even with pre-trained models made available. This means we can often write simple code that looks like the following:
 1 2 3 4 5 6 7 8 9 10 11 12  from torchvision.</description>
     </item>
