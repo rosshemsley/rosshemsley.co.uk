@@ -6,11 +6,7 @@
     <description>Recent content on Ross Hemsley</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
-    <lastBuildDate>Sat, 12 Jan 2019 13:09:42 +0000</lastBuildDate>
-    
-	<atom:link href="https://rosshemsley.co.uk/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 12 Jan 2019 13:09:42 +0000</lastBuildDate><atom:link href="https://rosshemsley.co.uk/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My Deep Learning Toolchain</title>
       <link>https://rosshemsley.co.uk/posts/deep_learning_toolchain/</link>
@@ -90,7 +86,7 @@ In this post, I will explore some of these patterns in more depth, and discuss w
       <guid>https://rosshemsley.co.uk/about/</guid>
       <description>Software Engineer with an academic R&amp;amp;D background
 Sometimes writes things on the internet
-Works at Lyft Level 5</description>
+Currently works at DeepMind</description>
     </item>
     
     <item>

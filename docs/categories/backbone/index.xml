@@ -6,11 +6,7 @@
     <description>Recent content in backbone on Ross Hemsley</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
-    <lastBuildDate>Mon, 03 Aug 2020 13:19:31 +0100</lastBuildDate>
-    
-	<atom:link href="https://rosshemsley.co.uk/categories/backbone/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 03 Aug 2020 13:19:31 +0100</lastBuildDate><atom:link href="https://rosshemsley.co.uk/categories/backbone/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>KISS: Backbones in Pytorch</title>
       <link>https://rosshemsley.co.uk/posts/kiss-backbone-pytorch/</link>

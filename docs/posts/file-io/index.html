@@ -6,7 +6,7 @@
     
     <title>Thoughts on code review: File IO | Ross Hemsley</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.74.3" />
+    <meta name="generator" content="Hugo 0.78.2" />
     
     
       <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -285,13 +285,14 @@ Let&rsquo;s see if we end up agreeing :)</p>
 	}
 
 	<span style="color:#66d9ef">return</span> <span style="color:#a6e22e">result</span>, <span style="color:#a6e22e">err</span>
-}</code></pre></td></tr></table>
+}
+</code></pre></td></tr></table>
 </div>
 </div>
 <h2 id="variable-naming">Variable naming</h2>
 <p>First thing&rsquo;s first, let&rsquo;s talk about variable naming. A review comment I often leave is,</p>
 <blockquote>
-<p><em>Avoid calling variables that hold paths</em> &lsquo;<code>file</code>&rsquo;<em>. Always use</em> <code>path</code> <em>instead.</em></p>
+<p><em>Avoid calling variables that hold paths</em> &lsquo;<code>file</code>'<em>. Always use</em> <code>path</code> <em>instead.</em></p>
 </blockquote>
 <p>In the example above, we should name our variable <code>jsonPath</code> (or similar). The reasoning here is that almost every language has a built-in type called <code>file</code>, which usually references an actual file descriptor. Save your <code>file</code> variable name for this!</p>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
@@ -301,7 +302,8 @@ Let&rsquo;s see if we end up agreeing :)</p>
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#a6e22e">path</span> <span style="color:#f92672">:=</span> <span style="color:#e6db74">&#34;/tmp/foo&#34;</span>
-<span style="color:#a6e22e">file</span>, <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">os</span>.<span style="color:#a6e22e">Open</span>(<span style="color:#a6e22e">path</span>)</code></pre></td></tr></table>
+<span style="color:#a6e22e">file</span>, <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">os</span>.<span style="color:#a6e22e">Open</span>(<span style="color:#a6e22e">path</span>)
+</code></pre></td></tr></table>
 </div>
 </div>
 <p>The advice applies equally well to variables called <code>dir</code> that actually contain <em>paths</em>  to directories. This may seem overly nit-picky, but being precise is always valuable to aid reading code. Additionally, there are other good reasons to be picky here, hopefully I&rsquo;ll convince you of these in the next points.</p>
@@ -348,7 +350,8 @@ In C++, you can use <code>std::iostream</code>&hellip; yes, I know that <code>io
 
 <span style="color:#75715e">// This function doesn&#39;t have to deal
 </span><span style="color:#75715e">// with invalid paths any more.
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">useFile</span>(<span style="color:#a6e22e">f</span>)</code></pre></td></tr></table>
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">useFile</span>(<span style="color:#a6e22e">f</span>)
+</code></pre></td></tr></table>
 </div>
 </div>
 <p>Long-lived objects that store file paths can be particularly troublesome, because you may only find out that your object was incorrectly initialised with a non-existent path much later, with no obvious way to gracefully handle the error.</p>
@@ -397,7 +400,8 @@ In C++, you can use <code>std::iostream</code>&hellip; yes, I know that <code>io
 			}
 		})
 	}
-}</code></pre></td></tr></table>
+}
+</code></pre></td></tr></table>
 </div>
 </div>
 <p>This is particularly valuable when we are parsing some tricky format into an in-memory structure. Following this pattern has saved me a lot of time over the years by making it easier to catch bugs early.</p>
@@ -528,7 +532,8 @@ In C++, you can use <code>std::iostream</code>&hellip; yes, I know that <code>io
 	}
 
 	<span style="color:#66d9ef">return</span> <span style="color:#a6e22e">result</span>, <span style="color:#a6e22e">err</span>
-}</code></pre></td></tr></table>
+}
+</code></pre></td></tr></table>
 </div>
 </div>
 <ul class="pa0">
@@ -565,7 +570,7 @@ In C++, you can use <code>std::iostream</code>&hellip; yes, I know that <code>io
     <footer class="bg-dark-gray bottom-0 w-100 pa3" role="contentinfo">
     <div class="flex justify-between">
         <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://rosshemsley.co.uk/">
-            &copy; 2020 Ross Hemsley
+            &copy; 2021 Ross Hemsley
         </a>
         <div>
 
